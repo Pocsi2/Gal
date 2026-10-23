@@ -54,7 +54,7 @@ export default function ImageExplorer() {
   if (!active) return null;
 
   return (
-    <section className="image-exploration" id="exploration" aria-labelledby="exploration-title">
+    <section className="image-exploration" id="exploration" aria-labelledby="exploration-title" onKeyDown={handleKeys}>
       <header className="exploration-heading">
         <p className="overline">IMAGE FIELD / 2026</p>
         <h2 id="exploration-title">Enter the <em>image field.</em></h2>
@@ -68,7 +68,6 @@ export default function ImageExplorer() {
         aria-label="Image exploration"
         aria-roledescription="carousel"
         tabIndex={0}
-        onKeyDown={handleKeys}
         onPointerDown={handlePointerDown}
         onPointerUp={handlePointerUp}
         onPointerCancel={() => { touchStart.current = null; }}
