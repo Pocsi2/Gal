@@ -1,0 +1,27 @@
+{
+  "name": "explorations-2026-gallery",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "typecheck": "tsc --noEmit",
+    "assets:build": "node scripts/build-images.mjs",
+    "content:check": "node scripts/validate-content.mjs",
+    "preview": "node scripts/serve-static.mjs",
+    "test": "node --test",
+    "export:check": "node scripts/validate-export.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "sharp": "0.35.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "5.9.3"
+  }
+}

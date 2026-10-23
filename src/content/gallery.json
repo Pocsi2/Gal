@@ -1,0 +1,19 @@
+{
+  "opening": { "imageId": "jump", "alt": "Two figures facing one another in a dark, luminous scene" },
+  "artworks": [
+    { "id": "work-01", "order": 1, "imageId": "jump", "label": "IMAGE", "alt": "Two figures facing one another in a dark, luminous scene", "title": null, "year": null, "medium": null },
+    { "id": "work-02", "order": 2, "imageId": "chore", "label": "GESTURE", "alt": "A fine-line drawing on a pale background", "title": null, "year": null, "medium": null },
+    { "id": "work-03", "order": 3, "imageId": "vocal", "label": "SURFACE", "alt": "Close crop of a face with dark lipstick", "title": null, "year": null, "medium": null },
+    { "id": "work-04", "order": 4, "imageId": "one", "label": "MARK", "alt": "A small white line drawing on black", "title": null, "year": null, "medium": null }
+  ],
+  "objects": [
+    { "id": "object-cushion", "imageId": "chore-cushion", "label": "CUSHION STUDY", "alt": "A white cushion with a fine-line drawing", "availability": null, "price": null, "associationConfirmed": false },
+    { "id": "object-dress", "imageId": "chore-dress", "label": "DRESS STUDY", "alt": "A white dress printed with a fine-line pattern", "availability": null, "price": null, "associationConfirmed": false },
+    { "id": "object-pin-chore", "imageId": "chore-pin", "label": "PIN STUDY", "alt": "A round pin with a small line drawing", "availability": null, "price": null, "associationConfirmed": false },
+    { "id": "object-pin-jump", "imageId": "jump-pin", "label": "PIN STUDY", "alt": "A round pin featuring a dark image", "availability": null, "price": null, "associationConfirmed": false },
+    { "id": "object-socks", "imageId": "jump-socks", "label": "SOCKS STUDY", "alt": "A pair of dark patterned socks", "availability": null, "price": null, "associationConfirmed": false },
+    { "id": "object-clock", "imageId": "one-clock", "label": "CLOCK STUDY", "alt": "A simple wall clock with a light face", "availability": null, "price": null, "associationConfirmed": false },
+    { "id": "object-pin-vocal", "imageId": "vocal-pin", "label": "PIN STUDY", "alt": "A round pin with a close-up image", "availability": null, "price": null, "associationConfirmed": false },
+    { "id": "object-socks-vocal", "imageId": "vocal-socks", "label": "SOCKS STUDY", "alt": "A pair of patterned socks in light and dark tones", "availability": null, "price": null, "associationConfirmed": false }
+  ]
+}

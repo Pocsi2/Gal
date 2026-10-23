@@ -1,0 +1,16 @@
+{
+  "sources": [
+    { "id": "jump", "file": "Jump.png", "label": "Image study" },
+    { "id": "chore", "file": "chore.jfif", "label": "Gesture study" },
+    { "id": "one", "file": "one.png", "label": "Mark study" },
+    { "id": "vocal", "file": "vocal.jpeg", "label": "Surface study" },
+    { "id": "chore-cushion", "file": "chore cojin (1).jpg", "label": "Cushion" },
+    { "id": "chore-dress", "file": "chore dress (2).jpg", "label": "Dress" },
+    { "id": "chore-pin", "file": "chore pin (1).jpg", "label": "Pin" },
+    { "id": "jump-pin", "file": "jump pin (2).jpg", "label": "Pin" },
+    { "id": "jump-socks", "file": "jump sucks (3).jpg", "label": "Socks" },
+    { "id": "one-clock", "file": "one clock (5).jpg", "label": "Clock" },
+    { "id": "vocal-pin", "file": "vocal pin (1).jpg", "label": "Pin" },
+    { "id": "vocal-socks", "file": "vocal sucks (1).jpg", "label": "Socks" }
+  ]
+}

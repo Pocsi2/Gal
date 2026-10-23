@@ -1,0 +1,3 @@
+# Preserve original artwork file bytes. Web derivatives are generated separately.
+assets/originals/* -text
+public/images/*.webp -text

@@ -1,0 +1,349 @@
+{
+  "generatedAt": "2026-10-23T05:18:18.671Z",
+  "format": "webp",
+  "quality": 86,
+  "images": [
+    {
+      "id": "jump",
+      "sourceFilename": "Jump.png",
+      "sourceHash": "7ebedfd2a7cdece5e5f14d907552f15428eefab61a2c3d6fd1eb04f5f8af8054",
+      "sourceFormat": "png",
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "orientation": "landscape",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "path": "/images/jump-480.webp",
+          "bytes": 16974
+        },
+        {
+          "width": 768,
+          "height": 512,
+          "path": "/images/jump-768.webp",
+          "bytes": 38030
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "path": "/images/jump-1200.webp",
+          "bytes": 72822
+        },
+        {
+          "width": 1536,
+          "height": 1024,
+          "path": "/images/jump-1536.webp",
+          "bytes": 102936
+        }
+      ]
+    },
+    {
+      "id": "chore",
+      "sourceFilename": "chore.jfif",
+      "sourceHash": "88ce1f150ebb77d725843d277b996f87685ab47fc6c87af9c7a624388c9f9edf",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 1031,
+      "sourceHeight": 1600,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 745,
+          "path": "/images/chore-480.webp",
+          "bytes": 15508
+        },
+        {
+          "width": 768,
+          "height": 1192,
+          "path": "/images/chore-768.webp",
+          "bytes": 24474
+        },
+        {
+          "width": 1031,
+          "height": 1600,
+          "path": "/images/chore-1031.webp",
+          "bytes": 31320
+        }
+      ]
+    },
+    {
+      "id": "one",
+      "sourceFilename": "one.png",
+      "sourceHash": "48088983e25e53200822e58b1f308190d343e343a44a03678207014204491420",
+      "sourceFormat": "png",
+      "sourceWidth": 381,
+      "sourceHeight": 654,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 381,
+          "height": 654,
+          "path": "/images/one-381.webp",
+          "bytes": 38764
+        }
+      ]
+    },
+    {
+      "id": "vocal",
+      "sourceFilename": "vocal.jpeg",
+      "sourceHash": "98f013a65dfbae57ef9d6f8b1bde57c3d756ebb5e2535caff1b914e2f54fcd9e",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 2496,
+      "sourceHeight": 1664,
+      "orientation": "landscape",
+      "variants": [
+        {
+          "width": 480,
+          "height": 320,
+          "path": "/images/vocal-480.webp",
+          "bytes": 9990
+        },
+        {
+          "width": 768,
+          "height": 512,
+          "path": "/images/vocal-768.webp",
+          "bytes": 25488
+        },
+        {
+          "width": 1200,
+          "height": 800,
+          "path": "/images/vocal-1200.webp",
+          "bytes": 59146
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "path": "/images/vocal-1600.webp",
+          "bytes": 96056
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "path": "/images/vocal-2000.webp",
+          "bytes": 139954
+        },
+        {
+          "width": 2496,
+          "height": 1664,
+          "path": "/images/vocal-2496.webp",
+          "bytes": 211390
+        }
+      ]
+    },
+    {
+      "id": "chore-cushion",
+      "sourceFilename": "chore cojin (1).jpg",
+      "sourceHash": "42f8437c4d455e1ce0927c5ab9caf21550553f3cfce56fe6fc9cf4de1c8977f0",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 1000,
+      "sourceHeight": 1000,
+      "orientation": "square",
+      "variants": [
+        {
+          "width": 480,
+          "height": 480,
+          "path": "/images/chore-cushion-480.webp",
+          "bytes": 17884
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "path": "/images/chore-cushion-768.webp",
+          "bytes": 49026
+        },
+        {
+          "width": 1000,
+          "height": 1000,
+          "path": "/images/chore-cushion-1000.webp",
+          "bytes": 87142
+        }
+      ]
+    },
+    {
+      "id": "chore-dress",
+      "sourceFilename": "chore dress (2).jpg",
+      "sourceHash": "b33dcd948d0708e1d339d3efdeb9a26d17d5a11556eee9a005093b242fdaceba",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 750,
+      "sourceHeight": 1000,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "path": "/images/chore-dress-480.webp",
+          "bytes": 14634
+        },
+        {
+          "width": 750,
+          "height": 1000,
+          "path": "/images/chore-dress-750.webp",
+          "bytes": 28696
+        }
+      ]
+    },
+    {
+      "id": "chore-pin",
+      "sourceFilename": "chore pin (1).jpg",
+      "sourceHash": "00354b55d52be7fbb8bf239c716db59b46ca726d2e8e54b318785a8f44d6a5c1",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 1000,
+      "sourceHeight": 1000,
+      "orientation": "square",
+      "variants": [
+        {
+          "width": 480,
+          "height": 480,
+          "path": "/images/chore-pin-480.webp",
+          "bytes": 4136
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "path": "/images/chore-pin-768.webp",
+          "bytes": 7878
+        },
+        {
+          "width": 1000,
+          "height": 1000,
+          "path": "/images/chore-pin-1000.webp",
+          "bytes": 11424
+        }
+      ]
+    },
+    {
+      "id": "jump-pin",
+      "sourceFilename": "jump pin (2).jpg",
+      "sourceHash": "d1de7e7026d6f8ebf5144f30f9ffd6f46ee7d8b40911f99d868643a96aa1e5b0",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 1000,
+      "sourceHeight": 1000,
+      "orientation": "square",
+      "variants": [
+        {
+          "width": 480,
+          "height": 480,
+          "path": "/images/jump-pin-480.webp",
+          "bytes": 12170
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "path": "/images/jump-pin-768.webp",
+          "bytes": 23014
+        },
+        {
+          "width": 1000,
+          "height": 1000,
+          "path": "/images/jump-pin-1000.webp",
+          "bytes": 33728
+        }
+      ]
+    },
+    {
+      "id": "jump-socks",
+      "sourceFilename": "jump sucks (3).jpg",
+      "sourceHash": "3dd1475642fb7d5ea7172d7f133551bcb891674f821f3ebe0287eda33da3c435",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 1000,
+      "sourceHeight": 1000,
+      "orientation": "square",
+      "variants": [
+        {
+          "width": 480,
+          "height": 480,
+          "path": "/images/jump-socks-480.webp",
+          "bytes": 14252
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "path": "/images/jump-socks-768.webp",
+          "bytes": 28452
+        },
+        {
+          "width": 1000,
+          "height": 1000,
+          "path": "/images/jump-socks-1000.webp",
+          "bytes": 45830
+        }
+      ]
+    },
+    {
+      "id": "one-clock",
+      "sourceFilename": "one clock (5).jpg",
+      "sourceHash": "97fea9f8321fb22b967ec1e667b47d28795dac4f07ed29ba268aadb41c1e442a",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 750,
+      "sourceHeight": 1000,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "path": "/images/one-clock-480.webp",
+          "bytes": 9142
+        },
+        {
+          "width": 750,
+          "height": 1000,
+          "path": "/images/one-clock-750.webp",
+          "bytes": 16792
+        }
+      ]
+    },
+    {
+      "id": "vocal-pin",
+      "sourceFilename": "vocal pin (1).jpg",
+      "sourceHash": "903ffc2b6f5d5131176b0a319c18e12c9cb101296c05c85ffc9d3b58420c200f",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 1000,
+      "sourceHeight": 1000,
+      "orientation": "square",
+      "variants": [
+        {
+          "width": 480,
+          "height": 480,
+          "path": "/images/vocal-pin-480.webp",
+          "bytes": 3990
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "path": "/images/vocal-pin-768.webp",
+          "bytes": 8308
+        },
+        {
+          "width": 1000,
+          "height": 1000,
+          "path": "/images/vocal-pin-1000.webp",
+          "bytes": 13634
+        }
+      ]
+    },
+    {
+      "id": "vocal-socks",
+      "sourceFilename": "vocal sucks (1).jpg",
+      "sourceHash": "60cbc5d33b6cd33d98e967d543cb625b283667b0ca9652c75357040e13aea8cc",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 750,
+      "sourceHeight": 1000,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "path": "/images/vocal-socks-480.webp",
+          "bytes": 18726
+        },
+        {
+          "width": 750,
+          "height": 1000,
+          "path": "/images/vocal-socks-750.webp",
+          "bytes": 43806
+        }
+      ]
+    }
+  ]
+}
