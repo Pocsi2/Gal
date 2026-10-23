@@ -1,11 +1,14 @@
 {
-  "generatedAt": "2026-10-23T05:18:18.671Z",
+  "generatedAt": "2026-10-23T05:48:00.182Z",
   "format": "webp",
   "quality": 86,
   "images": [
     {
       "id": "jump",
       "sourceFilename": "Jump.png",
+      "role": "artwork",
+      "group": "image",
+      "alt": "Two figures face one another in a dark, luminous scene",
       "sourceHash": "7ebedfd2a7cdece5e5f14d907552f15428eefab61a2c3d6fd1eb04f5f8af8054",
       "sourceFormat": "png",
       "sourceWidth": 1536,
@@ -41,6 +44,9 @@
     {
       "id": "chore",
       "sourceFilename": "chore.jfif",
+      "role": "artwork",
+      "group": "chore",
+      "alt": "A fine-line drawing on a pale background",
       "sourceHash": "88ce1f150ebb77d725843d277b996f87685ab47fc6c87af9c7a624388c9f9edf",
       "sourceFormat": "jpeg",
       "sourceWidth": 1031,
@@ -68,25 +74,11 @@
       ]
     },
     {
-      "id": "one",
-      "sourceFilename": "one.png",
-      "sourceHash": "48088983e25e53200822e58b1f308190d343e343a44a03678207014204491420",
-      "sourceFormat": "png",
-      "sourceWidth": 381,
-      "sourceHeight": 654,
-      "orientation": "portrait",
-      "variants": [
-        {
-          "width": 381,
-          "height": 654,
-          "path": "/images/one-381.webp",
-          "bytes": 38764
-        }
-      ]
-    },
-    {
       "id": "vocal",
       "sourceFilename": "vocal.jpeg",
+      "role": "artwork",
+      "group": "vocal",
+      "alt": "Close crop of lips with dark lipstick",
       "sourceHash": "98f013a65dfbae57ef9d6f8b1bde57c3d756ebb5e2535caff1b914e2f54fcd9e",
       "sourceFormat": "jpeg",
       "sourceWidth": 2496,
@@ -132,8 +124,95 @@
       ]
     },
     {
+      "id": "one",
+      "sourceFilename": "one.png",
+      "role": "artwork",
+      "group": "one",
+      "alt": "A small white line drawing against black",
+      "sourceHash": "48088983e25e53200822e58b1f308190d343e343a44a03678207014204491420",
+      "sourceFormat": "png",
+      "sourceWidth": 381,
+      "sourceHeight": 654,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 381,
+          "height": 654,
+          "path": "/images/one-381.webp",
+          "bytes": 38764
+        }
+      ]
+    },
+    {
+      "id": "image-hand",
+      "sourceFilename": "image (3).jpg",
+      "role": "artwork",
+      "group": "image",
+      "alt": "A black-gloved hand against a dark background",
+      "sourceHash": "78254a1674aad2d1ae895095f23666cf5395deb85f8e9d3c9dda98ca67827da1",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 784,
+      "sourceHeight": 1168,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 715,
+          "path": "/images/image-hand-480.webp",
+          "bytes": 17454
+        },
+        {
+          "width": 768,
+          "height": 1144,
+          "path": "/images/image-hand-768.webp",
+          "bytes": 52970
+        },
+        {
+          "width": 784,
+          "height": 1168,
+          "path": "/images/image-hand-784.webp",
+          "bytes": 59828
+        }
+      ]
+    },
+    {
+      "id": "image-eye",
+      "sourceFilename": "image (4).jpg",
+      "role": "artwork",
+      "group": "image",
+      "alt": "Close-up of an eye framed by dark makeup",
+      "sourceHash": "b1525d118c9c6a777647ebb9df9b1e0bac43439f7b6f5ea8fec593ebf2f9146e",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 784,
+      "sourceHeight": 1168,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 715,
+          "path": "/images/image-eye-480.webp",
+          "bytes": 55602
+        },
+        {
+          "width": 768,
+          "height": 1144,
+          "path": "/images/image-eye-768.webp",
+          "bytes": 123318
+        },
+        {
+          "width": 784,
+          "height": 1168,
+          "path": "/images/image-eye-784.webp",
+          "bytes": 135644
+        }
+      ]
+    },
+    {
       "id": "chore-cushion",
       "sourceFilename": "chore cojin (1).jpg",
+      "role": "object-study",
+      "group": "chore",
+      "alt": "A white cushion with a single line drawing on a bed",
       "sourceHash": "42f8437c4d455e1ce0927c5ab9caf21550553f3cfce56fe6fc9cf4de1c8977f0",
       "sourceFormat": "jpeg",
       "sourceWidth": 1000,
@@ -161,8 +240,63 @@
       ]
     },
     {
+      "id": "chore-cushion-alt",
+      "sourceFilename": "chore cojin (2).jpg",
+      "role": "object-study",
+      "group": "chore",
+      "alt": "A square white cushion printed with a line drawing",
+      "sourceHash": "a8a95dca470ee17d8b78aa8aa39e7fbb3a48341045f341298b8bf2310cd9b430",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 750,
+      "sourceHeight": 1000,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "path": "/images/chore-cushion-alt-480.webp",
+          "bytes": 6522
+        },
+        {
+          "width": 750,
+          "height": 1000,
+          "path": "/images/chore-cushion-alt-750.webp",
+          "bytes": 12526
+        }
+      ]
+    },
+    {
+      "id": "chore-dress-flat",
+      "sourceFilename": "chore dress (1).jpg",
+      "role": "object-study",
+      "group": "chore",
+      "alt": "A white dress shown flat with a repeating fine-line print",
+      "sourceHash": "1114a34815413d135db797c5180f3334fdb540cf57fd657e94572e7b3f6976c8",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 750,
+      "sourceHeight": 1000,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "path": "/images/chore-dress-flat-480.webp",
+          "bytes": 19210
+        },
+        {
+          "width": 750,
+          "height": 1000,
+          "path": "/images/chore-dress-flat-750.webp",
+          "bytes": 38114
+        }
+      ]
+    },
+    {
       "id": "chore-dress",
       "sourceFilename": "chore dress (2).jpg",
+      "role": "object-study",
+      "group": "chore",
+      "alt": "Back view of a model wearing a white printed dress",
       "sourceHash": "b33dcd948d0708e1d339d3efdeb9a26d17d5a11556eee9a005093b242fdaceba",
       "sourceFormat": "jpeg",
       "sourceWidth": 750,
@@ -184,8 +318,37 @@
       ]
     },
     {
+      "id": "chore-dress-front",
+      "sourceFilename": "chore dress (3).jpg",
+      "role": "object-study",
+      "group": "chore",
+      "alt": "Front view of a model wearing a white printed dress",
+      "sourceHash": "307a4aa9ee0cf11154192fe704c54db1e4020b54527d36e2ed274660afd2549b",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 750,
+      "sourceHeight": 1000,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "path": "/images/chore-dress-front-480.webp",
+          "bytes": 23370
+        },
+        {
+          "width": 750,
+          "height": 1000,
+          "path": "/images/chore-dress-front-750.webp",
+          "bytes": 45150
+        }
+      ]
+    },
+    {
       "id": "chore-pin",
       "sourceFilename": "chore pin (1).jpg",
+      "role": "object-study",
+      "group": "chore",
+      "alt": "A circular white pin showing a small line drawing",
       "sourceHash": "00354b55d52be7fbb8bf239c716db59b46ca726d2e8e54b318785a8f44d6a5c1",
       "sourceFormat": "jpeg",
       "sourceWidth": 1000,
@@ -213,8 +376,63 @@
       ]
     },
     {
+      "id": "chore-pin-reverse",
+      "sourceFilename": "chore pin (2).jpg",
+      "role": "object-study",
+      "group": "chore",
+      "alt": "Reverse of a circular pin showing its metal clasp",
+      "sourceHash": "1975069d898cf754981be5e55c9668426be7c5bd744436a8a51fa0670136c272",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 750,
+      "sourceHeight": 1000,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "path": "/images/chore-pin-reverse-480.webp",
+          "bytes": 6878
+        },
+        {
+          "width": 750,
+          "height": 1000,
+          "path": "/images/chore-pin-reverse-750.webp",
+          "bytes": 13396
+        }
+      ]
+    },
+    {
+      "id": "jump-pin-reverse",
+      "sourceFilename": "jump pin (1).jpg",
+      "role": "object-study",
+      "group": "jump",
+      "alt": "Reverse of a circular pin showing its metal clasp",
+      "sourceHash": "8134a838aa59b0c0ba094ea8f7c01c58638944b7261b6414a8d1424eb56a2c67",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 750,
+      "sourceHeight": 1000,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "path": "/images/jump-pin-reverse-480.webp",
+          "bytes": 7416
+        },
+        {
+          "width": 750,
+          "height": 1000,
+          "path": "/images/jump-pin-reverse-750.webp",
+          "bytes": 14418
+        }
+      ]
+    },
+    {
       "id": "jump-pin",
       "sourceFilename": "jump pin (2).jpg",
+      "role": "object-study",
+      "group": "jump",
+      "alt": "A circular pin featuring the dark two-figure image",
       "sourceHash": "d1de7e7026d6f8ebf5144f30f9ffd6f46ee7d8b40911f99d868643a96aa1e5b0",
       "sourceFormat": "jpeg",
       "sourceWidth": 1000,
@@ -242,8 +460,63 @@
       ]
     },
     {
+      "id": "jump-socks-pair",
+      "sourceFilename": "jump sucks (1).jpg",
+      "role": "object-study",
+      "group": "jump",
+      "alt": "A pair of dark patterned socks shown upright",
+      "sourceHash": "afabcb5f222032d9f4de9791276b6aa164f4f95246b72d0013f2141a48889285",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 750,
+      "sourceHeight": 1000,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "path": "/images/jump-socks-pair-480.webp",
+          "bytes": 20084
+        },
+        {
+          "width": 750,
+          "height": 1000,
+          "path": "/images/jump-socks-pair-750.webp",
+          "bytes": 47640
+        }
+      ]
+    },
+    {
+      "id": "jump-socks-alt",
+      "sourceFilename": "jump sucks (2).jpg",
+      "role": "object-study",
+      "group": "jump",
+      "alt": "A second view of dark patterned socks",
+      "sourceHash": "523a54df857a00bf980db91c6f86bca9e99404d61402013ae41b0384a10c90ad",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 750,
+      "sourceHeight": 1000,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "path": "/images/jump-socks-alt-480.webp",
+          "bytes": 18712
+        },
+        {
+          "width": 750,
+          "height": 1000,
+          "path": "/images/jump-socks-alt-750.webp",
+          "bytes": 43126
+        }
+      ]
+    },
+    {
       "id": "jump-socks",
       "sourceFilename": "jump sucks (3).jpg",
+      "role": "object-study",
+      "group": "jump",
+      "alt": "A pair of dark patterned socks arranged diagonally",
       "sourceHash": "3dd1475642fb7d5ea7172d7f133551bcb891674f821f3ebe0287eda33da3c435",
       "sourceFormat": "jpeg",
       "sourceWidth": 1000,
@@ -271,8 +544,121 @@
       ]
     },
     {
+      "id": "jump-socks-detail",
+      "sourceFilename": "jump sucks (4).jpg",
+      "role": "object-study",
+      "group": "jump",
+      "alt": "Close crop of dark patterned textile",
+      "sourceHash": "fa8e969cf4a4b91b956385119adfa92eea8a99fdaa3c82a410dd2577fdb5cc60",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 750,
+      "sourceHeight": 1000,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "path": "/images/jump-socks-detail-480.webp",
+          "bytes": 30176
+        },
+        {
+          "width": 750,
+          "height": 1000,
+          "path": "/images/jump-socks-detail-750.webp",
+          "bytes": 53042
+        }
+      ]
+    },
+    {
+      "id": "one-clock-wall",
+      "sourceFilename": "one clock (1).jpg",
+      "role": "object-study",
+      "group": "one",
+      "alt": "A simple round wall clock",
+      "sourceHash": "ace404485213184dc86cf088a62786fdcd52e71b2e047d52fa88724bbd678425",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 1000,
+      "sourceHeight": 1000,
+      "orientation": "square",
+      "variants": [
+        {
+          "width": 480,
+          "height": 480,
+          "path": "/images/one-clock-wall-480.webp",
+          "bytes": 5986
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "path": "/images/one-clock-wall-768.webp",
+          "bytes": 11294
+        },
+        {
+          "width": 1000,
+          "height": 1000,
+          "path": "/images/one-clock-wall-1000.webp",
+          "bytes": 16848
+        }
+      ]
+    },
+    {
+      "id": "one-clock-angle",
+      "sourceFilename": "one clock (2).jpg",
+      "role": "object-study",
+      "group": "one",
+      "alt": "A round wall clock shown from a side angle",
+      "sourceHash": "6fba8dd3f7304047a7ad838c9562461f00860148445c61801df8d11190f565b6",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 675,
+      "sourceHeight": 900,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "path": "/images/one-clock-angle-480.webp",
+          "bytes": 10510
+        },
+        {
+          "width": 675,
+          "height": 900,
+          "path": "/images/one-clock-angle-675.webp",
+          "bytes": 21128
+        }
+      ]
+    },
+    {
+      "id": "one-clock-set",
+      "sourceFilename": "one clock (3).jpg",
+      "role": "object-study",
+      "group": "one",
+      "alt": "A group of three round clocks on a pale wall",
+      "sourceHash": "9af6ad0981cf38a068042c620afbec442f2e120b6286bbfc19c794e593300887",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 750,
+      "sourceHeight": 1000,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "path": "/images/one-clock-set-480.webp",
+          "bytes": 7180
+        },
+        {
+          "width": 750,
+          "height": 1000,
+          "path": "/images/one-clock-set-750.webp",
+          "bytes": 13152
+        }
+      ]
+    },
+    {
       "id": "one-clock",
       "sourceFilename": "one clock (5).jpg",
+      "role": "object-study",
+      "group": "one",
+      "alt": "A wall clock in an interior setting",
       "sourceHash": "97fea9f8321fb22b967ec1e667b47d28795dac4f07ed29ba268aadb41c1e442a",
       "sourceFormat": "jpeg",
       "sourceWidth": 750,
@@ -296,6 +682,9 @@
     {
       "id": "vocal-pin",
       "sourceFilename": "vocal pin (1).jpg",
+      "role": "object-study",
+      "group": "vocal",
+      "alt": "A round pin with a close-up image",
       "sourceHash": "903ffc2b6f5d5131176b0a319c18e12c9cb101296c05c85ffc9d3b58420c200f",
       "sourceFormat": "jpeg",
       "sourceWidth": 1000,
@@ -323,8 +712,37 @@
       ]
     },
     {
+      "id": "vocal-pin-reverse",
+      "sourceFilename": "vocal pin (2).jpg",
+      "role": "object-study",
+      "group": "vocal",
+      "alt": "Reverse of a round pin showing its metal clasp",
+      "sourceHash": "6e3d56a283a63d9e7374ff8559772bfe972de9558f6f671bc7bb50cd8bac984a",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 750,
+      "sourceHeight": 1000,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "path": "/images/vocal-pin-reverse-480.webp",
+          "bytes": 7420
+        },
+        {
+          "width": 750,
+          "height": 1000,
+          "path": "/images/vocal-pin-reverse-750.webp",
+          "bytes": 14116
+        }
+      ]
+    },
+    {
       "id": "vocal-socks",
       "sourceFilename": "vocal sucks (1).jpg",
+      "role": "object-study",
+      "group": "vocal",
+      "alt": "A pair of socks patterned with a close-up image",
       "sourceHash": "60cbc5d33b6cd33d98e967d543cb625b283667b0ca9652c75357040e13aea8cc",
       "sourceFormat": "jpeg",
       "sourceWidth": 750,
@@ -342,6 +760,58 @@
           "height": 1000,
           "path": "/images/vocal-socks-750.webp",
           "bytes": 43806
+        }
+      ]
+    },
+    {
+      "id": "vocal-socks-alt",
+      "sourceFilename": "vocal sucks (2).jpg",
+      "role": "object-study",
+      "group": "vocal",
+      "alt": "A second pair of patterned socks",
+      "sourceHash": "bef0060fcde2d9e545e92b1d96ee494d7ad8fe56d20a34735ad2a0c1ba77a091",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 750,
+      "sourceHeight": 1000,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "path": "/images/vocal-socks-alt-480.webp",
+          "bytes": 16874
+        },
+        {
+          "width": 750,
+          "height": 1000,
+          "path": "/images/vocal-socks-alt-750.webp",
+          "bytes": 41846
+        }
+      ]
+    },
+    {
+      "id": "vocal-socks-detail",
+      "sourceFilename": "vocal sucks (3).jpg",
+      "role": "object-study",
+      "group": "vocal",
+      "alt": "Close crop of the patterned textile",
+      "sourceHash": "d6f9d9efe958c78c69ac07c929943606950b175d268ed41a27088f8928116b66",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 750,
+      "sourceHeight": 1000,
+      "orientation": "portrait",
+      "variants": [
+        {
+          "width": 480,
+          "height": 640,
+          "path": "/images/vocal-socks-detail-480.webp",
+          "bytes": 29332
+        },
+        {
+          "width": 750,
+          "height": 1000,
+          "path": "/images/vocal-socks-detail-750.webp",
+          "bytes": 51784
         }
       ]
     }

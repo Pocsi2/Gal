@@ -9,9 +9,9 @@ const contact = JSON.parse(await readFile(path.join(root, 'src/config/contact.js
 const images = JSON.parse(await readFile(path.join(root, 'src/content/generated-manifest.json'), 'utf8'));
 const byId = new Map(images.images.map((image) => [image.id, image]));
 
-test('the exhibition presents four works in sequence without inventing metadata', () => {
-  assert.equal(gallery.artworks.length, 4);
-  assert.deepEqual(gallery.artworks.map((work) => work.order), [1, 2, 3, 4]);
+test('the exhibition presents six primary image studies without inventing metadata', () => {
+  assert.equal(gallery.artworks.length, 6);
+  assert.deepEqual(gallery.artworks.map((work) => work.order), [1, 2, 3, 4, 5, 6]);
   for (const work of gallery.artworks) {
     assert.ok(work.alt.trim());
     assert.equal(work.title, null);
@@ -21,7 +21,7 @@ test('the exhibition presents four works in sequence without inventing metadata'
 });
 
 test('object studies do not promise stock or price or assert an unconfirmed association', () => {
-  assert.equal(gallery.objects.length, 8);
+  assert.equal(gallery.objects.length, 22);
   for (const object of gallery.objects) {
     assert.ok(object.alt.trim());
     assert.equal(object.availability, null);
@@ -34,8 +34,10 @@ test('Telegram is the sole contact and no unverified destination is configured',
   assert.deepEqual(contact, { platform: 'Telegram', handle: '@thicklll', destinationVerified: false });
 });
 
-test('every artwork and object image has responsive local WebP variants', async () => {
+test('all 28 distinct source images have responsive local WebP variants', async () => {
   const ids = [gallery.opening.imageId, ...gallery.artworks.map((work) => work.imageId), ...gallery.objects.map((object) => object.imageId)];
+  assert.equal(new Set(ids.slice(1)).size, 28);
+  assert.equal(images.images.length, 28);
   for (const id of ids) {
     const image = byId.get(id);
     assert.ok(image, `missing image manifest entry ${id}`);
@@ -57,10 +59,18 @@ test('the responsive and reduced-motion compositions are present', async () => {
   assert.match(imageComponent, /sizes=/);
 });
 
+test('the image field supports keyboard, touch and thumbnail navigation', async () => {
+  const explorer = await readFile(path.join(root, 'src/components/ImageExplorer.tsx'), 'utf8');
+  assert.match(explorer, /ArrowRight/);
+  assert.match(explorer, /ArrowLeft/);
+  assert.match(explorer, /onPointerDown/);
+  assert.match(explorer, /aria-current/);
+});
+
 test('keyboard skip access and a live contact status are included', async () => {
   const layout = await readFile(path.join(root, 'src/app/layout.tsx'), 'utf8');
   const contactComponent = await readFile(path.join(root, 'src/components/TelegramInvitation.tsx'), 'utf8');
-  assert.match(layout, /Skip to the showcase/);
+  assert.match(layout, /Skip to the image field/);
   assert.match(contactComponent, /aria-live="polite"/);
   assert.match(contactComponent, /Copy Telegram handle/);
 });

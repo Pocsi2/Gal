@@ -37,6 +37,9 @@ for (const source of map.sources) {
   built.push({
     id: source.id,
     sourceFilename: source.file,
+    role: source.role,
+    group: source.group,
+    alt: source.alt,
     sourceHash,
     sourceFormat: metadata.format,
     sourceWidth,

@@ -18,7 +18,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body>
-        <a className="skip-link" href="#showcase">Skip to the showcase</a>
+        <a className="skip-link" href="#exploration">Skip to the image field</a>
         <GalleryMotion />
         {children}
       </body>

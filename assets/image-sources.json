@@ -1,16 +1,200 @@
 {
   "sources": [
-    { "id": "jump", "file": "Jump.png", "label": "Image study" },
-    { "id": "chore", "file": "chore.jfif", "label": "Gesture study" },
-    { "id": "one", "file": "one.png", "label": "Mark study" },
-    { "id": "vocal", "file": "vocal.jpeg", "label": "Surface study" },
-    { "id": "chore-cushion", "file": "chore cojin (1).jpg", "label": "Cushion" },
-    { "id": "chore-dress", "file": "chore dress (2).jpg", "label": "Dress" },
-    { "id": "chore-pin", "file": "chore pin (1).jpg", "label": "Pin" },
-    { "id": "jump-pin", "file": "jump pin (2).jpg", "label": "Pin" },
-    { "id": "jump-socks", "file": "jump sucks (3).jpg", "label": "Socks" },
-    { "id": "one-clock", "file": "one clock (5).jpg", "label": "Clock" },
-    { "id": "vocal-pin", "file": "vocal pin (1).jpg", "label": "Pin" },
-    { "id": "vocal-socks", "file": "vocal sucks (1).jpg", "label": "Socks" }
+    {
+      "id": "jump",
+      "file": "Jump.png",
+      "role": "artwork",
+      "group": "image",
+      "alt": "Two figures face one another in a dark, luminous scene"
+    },
+    {
+      "id": "chore",
+      "file": "chore.jfif",
+      "role": "artwork",
+      "group": "chore",
+      "alt": "A fine-line drawing on a pale background"
+    },
+    {
+      "id": "vocal",
+      "file": "vocal.jpeg",
+      "role": "artwork",
+      "group": "vocal",
+      "alt": "Close crop of lips with dark lipstick"
+    },
+    {
+      "id": "one",
+      "file": "one.png",
+      "role": "artwork",
+      "group": "one",
+      "alt": "A small white line drawing against black"
+    },
+    {
+      "id": "image-hand",
+      "file": "image (3).jpg",
+      "role": "artwork",
+      "group": "image",
+      "alt": "A black-gloved hand against a dark background"
+    },
+    {
+      "id": "image-eye",
+      "file": "image (4).jpg",
+      "role": "artwork",
+      "group": "image",
+      "alt": "Close-up of an eye framed by dark makeup"
+    },
+    {
+      "id": "chore-cushion",
+      "file": "chore cojin (1).jpg",
+      "role": "object-study",
+      "group": "chore",
+      "alt": "A white cushion with a single line drawing on a bed"
+    },
+    {
+      "id": "chore-cushion-alt",
+      "file": "chore cojin (2).jpg",
+      "role": "object-study",
+      "group": "chore",
+      "alt": "A square white cushion printed with a line drawing"
+    },
+    {
+      "id": "chore-dress-flat",
+      "file": "chore dress (1).jpg",
+      "role": "object-study",
+      "group": "chore",
+      "alt": "A white dress shown flat with a repeating fine-line print"
+    },
+    {
+      "id": "chore-dress",
+      "file": "chore dress (2).jpg",
+      "role": "object-study",
+      "group": "chore",
+      "alt": "Back view of a model wearing a white printed dress"
+    },
+    {
+      "id": "chore-dress-front",
+      "file": "chore dress (3).jpg",
+      "role": "object-study",
+      "group": "chore",
+      "alt": "Front view of a model wearing a white printed dress"
+    },
+    {
+      "id": "chore-pin",
+      "file": "chore pin (1).jpg",
+      "role": "object-study",
+      "group": "chore",
+      "alt": "A circular white pin showing a small line drawing"
+    },
+    {
+      "id": "chore-pin-reverse",
+      "file": "chore pin (2).jpg",
+      "role": "object-study",
+      "group": "chore",
+      "alt": "Reverse of a circular pin showing its metal clasp"
+    },
+    {
+      "id": "jump-pin-reverse",
+      "file": "jump pin (1).jpg",
+      "role": "object-study",
+      "group": "jump",
+      "alt": "Reverse of a circular pin showing its metal clasp"
+    },
+    {
+      "id": "jump-pin",
+      "file": "jump pin (2).jpg",
+      "role": "object-study",
+      "group": "jump",
+      "alt": "A circular pin featuring the dark two-figure image"
+    },
+    {
+      "id": "jump-socks-pair",
+      "file": "jump sucks (1).jpg",
+      "role": "object-study",
+      "group": "jump",
+      "alt": "A pair of dark patterned socks shown upright"
+    },
+    {
+      "id": "jump-socks-alt",
+      "file": "jump sucks (2).jpg",
+      "role": "object-study",
+      "group": "jump",
+      "alt": "A second view of dark patterned socks"
+    },
+    {
+      "id": "jump-socks",
+      "file": "jump sucks (3).jpg",
+      "role": "object-study",
+      "group": "jump",
+      "alt": "A pair of dark patterned socks arranged diagonally"
+    },
+    {
+      "id": "jump-socks-detail",
+      "file": "jump sucks (4).jpg",
+      "role": "object-study",
+      "group": "jump",
+      "alt": "Close crop of dark patterned textile"
+    },
+    {
+      "id": "one-clock-wall",
+      "file": "one clock (1).jpg",
+      "role": "object-study",
+      "group": "one",
+      "alt": "A simple round wall clock"
+    },
+    {
+      "id": "one-clock-angle",
+      "file": "one clock (2).jpg",
+      "role": "object-study",
+      "group": "one",
+      "alt": "A round wall clock shown from a side angle"
+    },
+    {
+      "id": "one-clock-set",
+      "file": "one clock (3).jpg",
+      "role": "object-study",
+      "group": "one",
+      "alt": "A group of three round clocks on a pale wall"
+    },
+    {
+      "id": "one-clock",
+      "file": "one clock (5).jpg",
+      "role": "object-study",
+      "group": "one",
+      "alt": "A wall clock in an interior setting"
+    },
+    {
+      "id": "vocal-pin",
+      "file": "vocal pin (1).jpg",
+      "role": "object-study",
+      "group": "vocal",
+      "alt": "A round pin with a close-up image"
+    },
+    {
+      "id": "vocal-pin-reverse",
+      "file": "vocal pin (2).jpg",
+      "role": "object-study",
+      "group": "vocal",
+      "alt": "Reverse of a round pin showing its metal clasp"
+    },
+    {
+      "id": "vocal-socks",
+      "file": "vocal sucks (1).jpg",
+      "role": "object-study",
+      "group": "vocal",
+      "alt": "A pair of socks patterned with a close-up image"
+    },
+    {
+      "id": "vocal-socks-alt",
+      "file": "vocal sucks (2).jpg",
+      "role": "object-study",
+      "group": "vocal",
+      "alt": "A second pair of patterned socks"
+    },
+    {
+      "id": "vocal-socks-detail",
+      "file": "vocal sucks (3).jpg",
+      "role": "object-study",
+      "group": "vocal",
+      "alt": "Close crop of the patterned textile"
+    }
   ]
 }
