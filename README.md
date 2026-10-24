@@ -33,7 +33,7 @@ The static export is written to `out/`. `npm run preview` serves it locally at `
 - `assets/originals/` contains unchanged copies of 28 unique images from the supplied folder. The 29-file inventory includes one exact duplicate, which is documented but not repeated in the visual sequence.
 - `assets/image-sources.json` maps the source files to stable IDs, image descriptions, filename-led groups, and presentation roles.
 - Run `npm run assets:build` to generate responsive WebP variants in `public/images/` and update `src/content/generated-manifest.json`.
-- The static image field uses native `srcset` and `sizes`; it does not require a runtime image optimizer.
+- The static image field uses native `srcset` and `sizes`; it does not require a runtime image optimizer. The image pipeline also samples a restrained, darkened ground color for each image so the exhibition atmosphere shifts with the artwork.
 - Original assets are kept outside `public/`; only optimized derivatives are served.
 - The full read-only inventory is in `docs/asset-manifest.csv` and `docs/asset-manifest.json`.
 
@@ -49,7 +49,7 @@ The workflow computes the correct repository path for both project pages and `us
 
 ## Design and motion
 
-The image field follows `docs/design-board.md`. The visitor can move frame by frame, use left/right keys, swipe on touch screens, or choose from the complete index. CSS provides a restrained image transition and a blurred echo of the active frame; there is no auto-advance. Reduced-motion visitors receive a static, complete presentation. Scroll remains native, with no WebGL, scroll hijacking, hover-only action, cart, or checkout.
+The image field follows `docs/design-board.md`. The visitor can move frame by frame, use left/right keys, swipe on touch screens, or choose from the complete horizontal filmstrip. Each image is presented at a scale suited to its natural orientation, against a color sampled from the image itself. CSS provides a restrained image transition and a blurred echo of the active frame; there is no auto-advance. Reduced-motion visitors receive a static, complete presentation. Scroll remains native, with no WebGL, scroll hijacking, hover-only action, cart, or checkout.
 
 ## Project structure
 

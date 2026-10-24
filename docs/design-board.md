@@ -9,19 +9,19 @@ The site should show the full body of this year's exploration while keeping the 
 | Moment | Composition | Words on screen | Interaction / motion |
 |---|---|---|---|
 | Enter | One artwork fills a near-black viewport. The copy sits low and left; a small count and explicit action make the larger collection discoverable. | **A year of looking.** / “A showcase of this year’s exploration through image, gesture and object.” / `ENTER THE IMAGE FIELD · 28 IMAGES` | The lead image resolves once. The entry action scrolls to the full image sequence. |
-| Image field | One large frame occupies the center. A soft blurred echo of the same image adds depth; the image stays the protagonist. | `IMAGE FIELD / 2026` / `01 — 28` | Previous/next controls, left/right keys, touch swipe, and direct selection from a 28-image visual index. The active image changes with one short blur-to-focus transition. No autoplay. |
+| Image field | A soft, darkened color sampled from each image washes across the page and stage. The image is presented at its natural aspect ratio, with a distinct scale for landscape, portrait, and square compositions. | `IMAGE FIELD / 2026` / `01 — 28` | Previous/next controls, left/right keys, touch swipe, and direct selection from a horizontal 28-frame filmstrip. The active image changes with one short blur-to-focus transition. No autoplay. |
 | Image studies | Six primary image studies appear first, each full-frame and uncropped where the source allows. | `IMAGE STUDY` and a running number | Every image can be selected directly. Titles, years, and media remain absent until confirmed. |
 | Object studies | Twenty-two visual object studies follow in the same sequence. No product-card language, specifications, or sales claims. | `OBJECT STUDY` and a running number | The same controls and image index apply. The one exact duplicate clock image is not repeated. |
-| Index | All 28 images appear as small, irregularly proportioned visual selectors under the active image. It works as an index, not a storefront grid. | Image count and frame number | Tap/click a frame to jump; active frame receives a restrained outline. Mobile uses a compact four-column index. |
+| Index | A horizontal filmstrip of 28 visual selectors sits beneath the active composition. It suggests a contact sheet or exhibition sequence, not a storefront grid. | Image count and frame number | Tap/click a frame to jump; active frame receives a restrained outline. The strip scrolls sideways on touch screens. |
 | Invitation | A quiet closing image field leads to one human contact action. | **If something stays with you, let’s talk.** / `@thicklll` | Copy the Telegram handle. No other contact channel, cart, or checkout. |
 
 ## Visual system
 
 | Element | Direction |
 |---|---|
-| Color | Near-black `#090909`, soft white `#ecebe7`, and one warm paper interruption. Use the image's own color as the accent. |
+| Color | Near-black `#090909`, soft white `#ecebe7`, and one warm paper interruption. A muted, darkened color sampled from the image's outer edge creates a backdrop that recedes into its background. |
 | Typography | One neutral sans for navigation and labels; a restrained editorial serif italic for a few large phrases. |
-| Scale | One active image at a time, with a clear count and a quiet visual index. No product-card layout. |
+| Scale | One active image at a time, naturally sized according to its aspect ratio, with a clear count and quiet horizontal filmstrip. No product-card layout. |
 | Space | Large margins around the image, but a clear invitation to explore so the first image does not read as the whole site. |
 | Texture | The active image creates its own low-opacity blurred field. No decorative grain, neon, gold, or heavy glass effects. |
 | Navigation | Visible image count, previous/next, keyboard arrows, touch swipe, and 28 direct image selectors. |

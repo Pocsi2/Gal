@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, type KeyboardEvent, type PointerEvent } from 'react';
+import { useRef, useState, type CSSProperties, type KeyboardEvent, type PointerEvent } from 'react';
 import gallery from '@/content/gallery.json';
 import manifest from '@/content/generated-manifest.json';
 import { withBasePath } from '@/lib/site-paths';
@@ -12,8 +12,6 @@ const sequence = [
   const asset = manifest.images.find((candidate) => candidate.id === item.imageId);
   return asset ? [{ ...item, asset }] : [];
 });
-
-const artworkCount = gallery.artworks.length;
 
 function responsiveSet(variants: typeof sequence[number]['asset']['variants']) {
   return variants.map((variant) => `${withBasePath(variant.path)} ${variant.width}w`).join(', ');
@@ -54,7 +52,13 @@ export default function ImageExplorer() {
   if (!active) return null;
 
   return (
-    <section className="image-exploration" id="exploration" aria-labelledby="exploration-title" onKeyDown={handleKeys}>
+    <section
+      className="image-exploration"
+      id="exploration"
+      aria-labelledby="exploration-title"
+      onKeyDown={handleKeys}
+      style={{ '--image-ground': active.asset.groundColor } as CSSProperties}
+    >
       <header className="exploration-heading">
         <p className="overline">IMAGE FIELD / 2026</p>
         <h2 id="exploration-title">Enter the <em>image field.</em></h2>
@@ -80,7 +84,7 @@ export default function ImageExplorer() {
         <button className="explorer-control explorer-previous" type="button" onClick={() => moveBy(-1)} aria-label="Previous image">
           <span aria-hidden="true">←</span><small>PREVIOUS</small>
         </button>
-        <figure className="explorer-frame" key={active.id}>
+        <figure className={`explorer-frame explorer-frame--${active.asset.orientation}`} key={active.id}>
           {/* eslint-disable-next-line @next/next/no-img-element -- Static export uses locally generated responsive WebP variants. */}
           <img
             src={withBasePath(activeVariant.path)}
