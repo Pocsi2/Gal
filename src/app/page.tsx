@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main id="top">
       <header className="masthead">
-        <a className="signature" href="#top" aria-label="Resilient abuse and speechless explorations">RESILIENT ABUSE</a>
+        <a className="signature" href="#top" aria-label="Resilient Explorations">RESILIENT EXPLORATIONS</a>
         <a className="index-link" href="#exhibition">Exhibition <span>{String(imageCount).padStart(2, '0')} WORKS</span></a>
       </header>
 
@@ -25,8 +25,8 @@ export default function Home() {
         <div className="opening-shade" aria-hidden="true" />
         <div className="opening-copy">
           <p className="overline">A visual record / 2026</p>
-          <h1 id="opening-title"><span>Resilient abuse</span><span>&amp; Speechless</span><span>explorations.</span></h1>
-          <p className="intro">A showcase of this year’s exploration<br className="desktop-break" /> through image, gesture and object.</p>
+          <h1 id="opening-title"><span>Resilient</span><span>Explorations</span></h1>
+          <p className="intro">A showcase of this stage’s exploration<br className="desktop-break" /> through image, gesture and object.</p>
         </div>
         <a className="scroll-cue" href="#exhibition"><span>Enter the exhibition · {imageCount} works</span><i aria-hidden="true">↓</i></a>
         <span className="frame-count" aria-hidden="true">01 — {String(imageCount).padStart(2, '0')}</span>

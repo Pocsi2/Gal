@@ -48,7 +48,7 @@ export default function TelegramInvitation() {
         <p className="telegram-fallback" role="status" aria-live="polite">{message}</p>
       </div>
       <footer className="footer">
-        <span>EXPLORATIONS / 2026</span>
+        <span>RESILIENT EXPLORATIONS / 2026</span>
         <a href="#top">Back to the beginning ↑</a>
       </footer>
     </section>

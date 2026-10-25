@@ -1,6 +1,6 @@
-# Resilient abuse & Speechless explorations.
+# Resilient Explorations
 
-A quiet digital exhibition: a showcase of this year's exploration through image, gesture, and object. The opening uses the `chore` drawing; the closing invitation uses `one`. The vertical gallery presents 16 selected images, with twelve object views together in one staggered exhibition wall. The remaining emergency references stay out of the public sequence. Object interpretations remain studies with no cart, checkout, price, stock, or availability claim. Telegram `@thicklll` is the sole contact.
+A quiet digital exhibition: a showcase of this stage’s exploration through image, gesture, and object. The opening uses the `chore` drawing; the closing invitation uses `one`. The vertical gallery presents 16 selected images, with twelve object views gathered in six minimal pairings. The remaining emergency references stay out of the public sequence. Object interpretations remain studies with no cart, checkout, price, stock, or availability claim. Telegram `@thicklll` is the sole contact.
 
 Live site: <https://pocsi2.github.io/Gal/>.
 

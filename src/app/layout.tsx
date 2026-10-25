@@ -3,11 +3,11 @@ import './globals.css';
 import GalleryMotion from '@/components/GalleryMotion';
 
 export const metadata: Metadata = {
-  title: 'Resilient abuse & Speechless explorations.',
-  description: 'A showcase of this year’s exploration through image, gesture and object.',
+  title: 'Resilient Explorations',
+  description: 'A showcase of this stage’s exploration through image, gesture and object.',
   openGraph: {
-    title: 'Resilient abuse & Speechless explorations.',
-    description: 'A showcase of this year’s exploration through image, gesture and object.',
+    title: 'Resilient Explorations',
+    description: 'A showcase of this stage’s exploration through image, gesture and object.',
     type: 'website',
   },
 };

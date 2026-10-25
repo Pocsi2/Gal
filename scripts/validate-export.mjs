@@ -10,8 +10,12 @@ for (const route of ['index.html', 'robots.txt', 'icon.svg', '404.html']) {
 }
 
 const html = await fs.readFile(path.join(output, 'index.html'), 'utf8').catch(() => '');
-if (!html.includes('A year')) errors.push('Opening statement is missing from the exported page.');
-if (!html.toLowerCase().includes('showcase of this year')) errors.push('This-year exploration framing is missing from the exported page.');
+if (!html.includes('<title>Resilient Explorations</title>')) errors.push('Gallery title is missing from the exported page.');
+if (!html.includes('A Life of') || !html.includes('Frames from this stage’s exploration.') || !html.includes('Move through them at your own pace.')) {
+  errors.push('The stage-exploration introduction is missing from the exported page.');
+}
+if (!html.includes('showcase of this stage')) errors.push('Stage-exploration framing is missing from the exported page.');
+if (!html.includes('Six paired arrangements of object studies')) errors.push('Paired object presentation is missing from the exported page.');
 if (!html.includes('@thicklll')) errors.push('Telegram handle is missing from the exported page.');
 if (!html.includes('Copy Telegram handle')) errors.push('Telegram contact action is missing from the exported page.');
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';

@@ -31,3 +31,16 @@
 @keyframes invitation-image-drift{from{transform:translate3d(0,0,0) scale(1.01)}to{transform:translate3d(-1.2%,-.6%,0) scale(1.055)}}
 @media(max-width:560px){.invitation-image{opacity:.27}.invitation-image img{object-position:right center}}
 @media(prefers-reduced-motion:reduce){.invitation-image img{animation:none!important;transform:none!important}}
+
+/* Six quiet pairings echo the matching exercise without adding game controls. */
+.object-gallery{width:min(100%,1120px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:auto;gap:2.5rem 1.5rem}
+.object-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.2rem;min-width:0;transition:transform .7s var(--ease)}
+.object-pair:hover{transform:translateY(-3px)}
+.object-work,.object-work:nth-child(n){width:auto;height:clamp(150px,20vw,260px);min-height:0;background:transparent;grid-column:auto;grid-row:auto;transform:none}
+.object-work-wall{background:transparent}
+.object-work .wall-echo{display:none}
+.object-work-wall img{max-width:94%;max-height:82%;filter:none}
+.object-work figcaption{left:.3rem;right:.3rem;bottom:.2rem;padding:0;background:none;color:rgba(236,235,231,.52);font-size:7px;letter-spacing:.14em}
+@media(max-width:800px){.object-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.6rem .8rem}.object-work,.object-work:nth-child(n){height:clamp(160px,30vw,240px)}}
+@media(max-width:560px){.object-gallery{grid-template-columns:1fr;gap:1.1rem;width:100%}.object-pair{gap:0}.object-work,.object-work:nth-child(n){height:42vw;min-height:140px}.object-work-wall img{max-width:92%;max-height:78%}.object-pair:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){.object-pair{transition:none!important;transform:none!important}}
