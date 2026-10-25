@@ -2,6 +2,7 @@ import type { CSSProperties } from 'react';
 import gallery from '@/content/gallery.json';
 import manifest from '@/content/generated-manifest.json';
 import { withBasePath } from '@/lib/site-paths';
+import ObjectMatch from '@/components/ObjectMatch';
 
 const records = [
   ...gallery.artworks.map((item) => ({ ...item, kind: 'image' as const })),
@@ -15,7 +16,14 @@ const exhibition = gallery.exhibitionImageIds.flatMap((id) => {
 });
 
 const primaryWorks = exhibition.filter((item) => item.kind === 'image');
-const objectStudies = exhibition.filter((item) => item.kind === 'object');
+const matchImageIds = new Set(gallery.objectMatchPairs.flatMap((pair) => pair.imageIds));
+const objectStudies = exhibition.filter((item) => item.kind === 'object' && !matchImageIds.has(item.imageId));
+const matchingImages = gallery.objectMatchPairs.flatMap((pair) => pair.imageIds).flatMap((id) => {
+  const item = exhibition.find((entry) => entry.imageId === id);
+  if (!item) return [];
+  const image = item.asset.variants[1] ?? item.asset.variants[0];
+  return [{ id, alt: item.alt, src: withBasePath(image.path), width: image.width, height: image.height, ground: item.asset.groundColor }];
+});
 
 function responsiveSet(variants: typeof exhibition[number]['asset']['variants']) {
   return variants.map((variant) => `${withBasePath(variant.path)} ${variant.width}w`).join(', ');
@@ -28,7 +36,7 @@ export default function GalleryExhibition() {
         <p className="overline">THE EXHIBITION / 2026</p>
         <h2 id="exhibition-title">A year of<br /><em>looking.</em></h2>
         <p>Sixteen frames from this year’s exploration.<br />Move through them at your own pace.</p>
-        <span className="exhibition-count">04 IMAGE STUDIES <i>/</i> 12 OBJECT STUDIES</span>
+        <span className="exhibition-count">04 IMAGE STUDIES <i>/</i> 06 OBJECT STUDIES <i>/</i> 06 MATCHING VIEWS</span>
       </header>
 
       <div className="primary-gallery" role="group" aria-label="Four image studies">
@@ -64,10 +72,10 @@ export default function GalleryExhibition() {
       <header className="objects-intro">
         <p className="overline">AN EXTENSION OF THE IMAGE</p>
         <h3>Objects<br /><em>in view.</em></h3>
-        <p>Twelve object studies, held in the same quiet light.</p>
+        <p>Six object studies, held in the same quiet light.</p>
       </header>
 
-      <div className="object-gallery" role="group" aria-label="Twelve object studies">
+      <div className="object-gallery" role="group" aria-label="Six object studies">
         {objectStudies.map((item, index) => {
           const image = item.asset.variants[Math.min(1, item.asset.variants.length - 1)];
           return (
@@ -96,6 +104,8 @@ export default function GalleryExhibition() {
           );
         })}
       </div>
+
+      <ObjectMatch images={matchingImages} pairs={gallery.objectMatchPairs} />
       <p className="exhibition-endnote">END OF THIS YEAR’S EXPLORATION</p>
     </section>
   );
