@@ -40,7 +40,7 @@ export default function TelegramInvitation() {
       </div>
       <div className="invitation-copy">
         <p className="overline">After the looking</p>
-        <h2 id="invitation-title">If something<br /><em>Calls you,</em><br />let’s talk direct.</h2>
+        <h2 id="invitation-title">If something<br /><em>calls You,</em><br />request something directly.</h2>
         <button className="telegram-link" type="button" onClick={copyHandle}>
           <span>Copy Telegram handle</span><b aria-hidden="true">↗</b>
         </button>
