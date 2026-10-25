@@ -1,6 +1,6 @@
 # Resilient abuse & Speechless explorations.
 
-A quiet digital exhibition: a showcase of this year's exploration through image, gesture, and object. The opening leads into a vertical gallery of 16 selected images. The drawings `chore` and `one` return as softly animated ambient backgrounds; they are not presented as separate works. The remaining emergency references stay out of the public sequence. Twelve object views appear together in one staggered exhibition wall. Object interpretations remain studies with no cart, checkout, price, stock, or availability claim. Telegram `@thicklll` is the sole contact.
+A quiet digital exhibition: a showcase of this year's exploration through image, gesture, and object. The opening uses the `chore` drawing; the closing invitation uses `one`. The vertical gallery presents 16 selected images, with twelve object views together in one staggered exhibition wall. The remaining emergency references stay out of the public sequence. Object interpretations remain studies with no cart, checkout, price, stock, or availability claim. Telegram `@thicklll` is the sole contact.
 
 Live site: <https://pocsi2.github.io/Gal/>.
 
@@ -31,7 +31,7 @@ The static export is written to `out/`. `npm run preview` serves it locally at `
 ## Image pipeline
 
 - `assets/originals/` contains unchanged copies of 28 unique images from the supplied folder. The 29-file inventory includes one exact duplicate, which is documented but not repeated in the visual sequence.
-- `exhibitionImageIds` in `src/content/gallery.json` selects the 16 works. `emergencyReferenceImageIds` keeps 12 images out of the main sequence; `chore` and `one` are used only as atmospheric background drawings.
+- `exhibitionImageIds` in `src/content/gallery.json` selects the 16 works. `chore` is assigned to the opening and `one` to the closing invitation; the remaining emergency references stay out of the exhibition sequence.
 - `assets/image-sources.json` maps the source files to stable IDs, image descriptions, filename-led groups, and presentation roles.
 - Run `npm run assets:build` to generate responsive WebP variants in `public/images/` and update `src/content/generated-manifest.json`.
 - The static exhibition uses native `srcset` and `sizes`; it does not require a runtime image optimizer. The image pipeline also samples a restrained, darkened ground color for each image so the exhibition atmosphere shifts with the artwork.

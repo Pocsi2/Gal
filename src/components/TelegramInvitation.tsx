@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import contact from '@/config/contact.json';
-import { withBasePath } from '@/lib/site-paths';
+import ResponsiveImage from '@/components/ResponsiveImage';
 
 export default function TelegramInvitation() {
   const [message, setMessage] = useState('Copy the handle and find the artist in Telegram.');
@@ -36,7 +36,7 @@ export default function TelegramInvitation() {
   return (
     <section className="invitation" id="contact" aria-labelledby="invitation-title">
       <div className="invitation-image" aria-hidden="true">
-        <img src={withBasePath('/images/jump-1536.webp')} alt="" loading="lazy" />
+        <ResponsiveImage image={{ id: 'one', alt: '' }} sizes="(max-width: 560px) 70vw, 34vw" />
       </div>
       <div className="invitation-copy">
         <p className="overline">After the looking</p>
