@@ -19,10 +19,6 @@ if (new Set(assignedIds).size !== manifest.images.length || assignedIds.some((id
 }
 if (exhibitionIds.length !== 16) errors.push('The public exhibition must contain 16 selected images.');
 if (emergencyIds.length !== 12) errors.push('The emergency reference list must contain 12 images.');
-const matchedImageIds = (gallery.objectMatchPairs ?? []).flatMap((pair) => pair.imageIds ?? []);
-if ((gallery.objectMatchPairs ?? []).length !== 3 || matchedImageIds.length !== 6 || new Set(matchedImageIds).size !== matchedImageIds.length || matchedImageIds.some((id) => !exhibitionIds.includes(id))) {
-  errors.push('The matching room must define three distinct pairs using only exhibited images.');
-}
 const referencedIds = [gallery.opening.imageId, ...assignedIds];
 const seenIds = new Set();
 const assetsById = new Map(manifest.images.map((image) => [image.id, image]));

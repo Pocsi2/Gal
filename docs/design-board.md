@@ -1,6 +1,6 @@
-# Design board — Speechless exploration & Self destructive reparations.
+# Design board — Resilient abuse & Speechless explorations.
 
-**Review direction · Vertical exhibition with object matching · Updated for review**
+**Review direction · Vertical exhibition with unified object wall · Updated for review**
 
 The site presents a showcase of this year’s exploration as a quiet exhibition. Sixteen selected images are shown in a vertical, paced sequence. Twelve images remain preserved in the source archive as emergency references and are not rendered in public view.
 
@@ -8,10 +8,9 @@ The site presents a showcase of this year’s exploration as a quiet exhibition.
 
 | Moment | Composition | Words on screen | Interaction / motion |
 |---|---|---|---|
-| Enter | One work fills a dark opening scene. Artist identity and entry cue remain spare. | **Speechless exploration & Self destructive reparations.** / “A showcase of this year’s exploration through image, gesture and object.” / `ENTER THE EXHIBITION · 16 WORKS` | The image resolves once. The entry cue moves to the exhibition. |
+| Enter | One work fills a dark opening scene. Artist identity and entry cue remain spare. | **Resilient abuse & Speechless explorations.** / “A showcase of this year’s exploration through image, gesture and object.” / `ENTER THE EXHIBITION · 16 WORKS` | The image resolves once. The entry cue moves to the exhibition. |
 | Image studies | Four large wall hangings, one at a time through native vertical scroll. Each keeps its original aspect ratio and receives generous surrounding space. | `IMAGE STUDY` and a quiet sequence number | The four works use alternating placement and scale. IntersectionObserver reveals each wall gently. |
-| Object studies | Six object images appear as a staggered wall installation. Six related views are held back for a quiet matching room. | `OBJECT STUDY` and a sequence number | Native page scroll; no sales claims. |
-| Matching room | Six images sit apart in an irregular field, like prints waiting to be brought together. A correct pair resolves into a paired object study. | “Bring them together.” / pair count / understated feedback | Drag one view over its match, or select two images in sequence. No timer, score, or penalty. Reset returns all six images to the room. |
+| Object studies | All twelve object images appear together in one staggered wall installation. Related views sit in the same visual field. | `OBJECT STUDY` and a sequence number / “Six designs applied, by the same hands” | Native page scroll; no sales claims. The images are presented together, with no separate interaction section. |
 | Closing | The exhibition ends with a small colophon and one direct human invitation. | `END OF THIS YEAR’S EXPLORATION` / `@thicklll` | A single Telegram contact action. No checkout. |
 
 ## Visual system
@@ -19,8 +18,8 @@ The site presents a showcase of this year’s exploration as a quiet exhibition.
 | Element | Direction |
 |---|---|
 | Color | Near-black room tone. Each wall uses a darkened color sampled from the image’s outer edge, with a soft blurred echo for atmosphere. |
-| Typography | One restrained sans-serif family for display, labels and body copy. Title set in plain weight with compact leading; no display serif or decorative italics. |
-| Scale | The four primary images receive near-viewport hangings. Object studies use an irregular, museum-like wall arrangement. |
+| Typography | One extra-light sans-serif family for the title, with compact leading. Labels and body copy remain restrained and clean. |
+| Scale | The four primary images receive near-viewport hangings. All twelve object studies share one irregular, museum-like wall arrangement. |
 | Space | Wide margins and uneven intervals create distinct encounters rather than a product grid or carousel. |
 | Navigation | A minimal fixed identity, a direct “Exhibition” link, and a visible entry cue. Scroll stays native. |
 | Contact | Telegram `@thicklll` only. No unverified contact URLs. |
@@ -30,8 +29,6 @@ The site presents a showcase of this year’s exploration as a quiet exhibition.
 - The opening resolves once and holds.
 - Each hanging enters through a short, restrained reveal as it reaches the viewport.
 - There is no auto-advance, carousel, horizontal gesture dependency, or scroll hijacking.
-- Matching pairs move into a quiet reveal panel after a correct drag or selection. Incorrect pairs receive brief text feedback and remain available.
-- Pointer drag is supplemented by click, touch tap, and keyboard button activation. The field has no time limit or score pressure.
 - Reduced-motion visitors receive the full static exhibition without reveal clipping or transitions.
 - Images use responsive WebP variants and native lazy loading.
 
@@ -45,6 +42,6 @@ The site presents a showcase of this year’s exploration as a quiet exhibition.
 ## Review points
 
 1. Does the vertical pacing feel like entering a gallery room?
-2. Do the four large works lead the experience before the object wall?
-3. Does the matching room feel like a playful act of looking while keeping the images central?
+2. Do the four large works lead the experience before the unified object wall?
+3. Do all twelve object views read as one considered collection?
 4. Are the twelve withheld images correctly preserved for emergency reference?

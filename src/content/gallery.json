@@ -35,23 +35,6 @@
     "one-clock",
     "vocal-pin-reverse"
   ],
-  "objectMatchPairs": [
-    {
-      "id": "clock-views",
-      "label": "WALL CLOCK / TWO VIEWS",
-      "imageIds": ["one-clock-wall", "one-clock-angle"]
-    },
-    {
-      "id": "jump-sock-views",
-      "label": "PATTERNED SOCKS / TWO VIEWS",
-      "imageIds": ["jump-socks-pair", "jump-socks-detail"]
-    },
-    {
-      "id": "vocal-sock-views",
-      "label": "PATTERNED SOCKS / TWO VIEWS",
-      "imageIds": ["vocal-socks-alt", "vocal-socks-detail"]
-    }
-  ],
   "artworks": [
     {
       "id": "work-01",

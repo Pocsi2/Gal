@@ -1,6 +1,6 @@
-# Speechless exploration & Self destructive reparations.
+# Resilient abuse & Speechless explorations.
 
-A quiet digital exhibition: a showcase of this year's exploration through image, gesture, and object. The opening leads into a vertical gallery of 16 selected images. Twelve images remain preserved as emergency references and are omitted from the public exhibition. A motion-led matching room invites visitors to bring together three pairs of views of the same object. Object interpretations remain studies with no cart, checkout, price, stock, or availability claim. Telegram `@thicklll` is the sole contact.
+A quiet digital exhibition: a showcase of this year's exploration through image, gesture, and object. The opening leads into a vertical gallery of 16 selected images. Twelve images remain preserved as emergency references and are omitted from the public exhibition. Twelve object views now appear together in one staggered exhibition wall. Object interpretations remain studies with no cart, checkout, price, stock, or availability claim. Telegram `@thicklll` is the sole contact.
 
 Live site: <https://pocsi2.github.io/Gal/>.
 
@@ -32,7 +32,6 @@ The static export is written to `out/`. `npm run preview` serves it locally at `
 
 - `assets/originals/` contains unchanged copies of 28 unique images from the supplied folder. The 29-file inventory includes one exact duplicate, which is documented but not repeated in the visual sequence.
 - `exhibitionImageIds` in `src/content/gallery.json` selects the 16 public works. `emergencyReferenceImageIds` preserves the 12 images omitted from the exhibition.
-- `objectMatchPairs` defines three visually verified pairs used by the matching room. The interaction uses local pointer events and semantic buttons; no motion library or WebGL is required.
 - `assets/image-sources.json` maps the source files to stable IDs, image descriptions, filename-led groups, and presentation roles.
 - Run `npm run assets:build` to generate responsive WebP variants in `public/images/` and update `src/content/generated-manifest.json`.
 - The static exhibition uses native `srcset` and `sizes`; it does not require a runtime image optimizer. The image pipeline also samples a restrained, darkened ground color for each image so the exhibition atmosphere shifts with the artwork.
@@ -51,7 +50,7 @@ The workflow computes the correct repository path for both project pages and `us
 
 ## Design and motion
 
-The exhibition follows `docs/design-board.md`. It is a native vertical gallery with four large image hangings, a staggered six-image object wall, and a matching room for three pairs of related object views. Each image is presented at a scale suited to its natural orientation, against a muted color sampled from its outer edge. There is no carousel or autoplay. Reduced-motion visitors receive a static, complete presentation. Scroll remains native, with no WebGL, scroll hijacking, hover-only action, cart, or checkout.
+The exhibition follows `docs/design-board.md`. It is a native vertical gallery with four large image hangings and one staggered wall holding all twelve selected object views together. Each image is presented at a scale suited to its natural orientation, against a muted color sampled from its outer edge. There is no carousel or autoplay. Reduced-motion visitors receive a static, complete presentation. Scroll remains native, with no WebGL, scroll hijacking, hover-only action, cart, or checkout.
 
 ## Project structure
 
