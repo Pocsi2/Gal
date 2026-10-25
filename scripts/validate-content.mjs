@@ -12,13 +12,17 @@ if (gallery.artworks.some((work) => work.title !== null || work.year !== null ||
 if (gallery.objects.some((object) => object.associationConfirmed !== false)) errors.push('Unconfirmed object associations must remain unconfirmed.');
 const exhibitionIds = gallery.exhibitionImageIds ?? [];
 const emergencyIds = gallery.emergencyReferenceImageIds ?? [];
+const archivedStudyIds = gallery.archivedStudyImageIds ?? [];
 const catalogIds = new Set(records.map((record) => record.imageId));
-const assignedIds = [...exhibitionIds, ...emergencyIds];
+const assignedIds = [...exhibitionIds, ...emergencyIds, ...archivedStudyIds];
 if (new Set(assignedIds).size !== manifest.images.length || assignedIds.some((id) => !catalogIds.has(id))) {
-  errors.push('Every source image must be assigned once to the exhibition or emergency references.');
+  errors.push('Every source image must be assigned once to the exhibition, archived studies, or emergency references.');
 }
-if (exhibitionIds.length !== 16) errors.push('The public exhibition must contain 16 selected images.');
+if (exhibitionIds.length !== 10) errors.push('The public exhibition must contain 10 selected images.');
 if (emergencyIds.length !== 12) errors.push('The emergency reference list must contain 12 images.');
+if (archivedStudyIds.length !== 6) errors.push('Six repetitive object studies must stay archived from the public exhibition.');
+const objectDisplayIds = exhibitionIds.filter((id) => gallery.objects.some((object) => object.imageId === id));
+if (objectDisplayIds.length !== 6) errors.push('The public exhibition must show six selected object studies.');
 const referencedIds = [gallery.opening.imageId, ...assignedIds];
 const seenIds = new Set();
 const assetsById = new Map(manifest.images.map((image) => [image.id, image]));
@@ -49,6 +53,6 @@ if (errors.length) {
   console.error(errors.map((error) => `- ${error}`).join('\n'));
   process.exitCode = 1;
 } else {
-  console.log(`Content checks passed: ${exhibitionIds.length} exhibited images, ${emergencyIds.length} emergency references, ${manifest.images.length} distinct source images, Telegram only.`);
+  console.log(`Content checks passed: ${exhibitionIds.length} exhibited images, ${archivedStudyIds.length} archived repetitive studies, ${emergencyIds.length} emergency references, ${manifest.images.length} distinct source images, Telegram only.`);
 }
 

@@ -11,13 +11,15 @@
     "chore-cushion",
     "chore-dress-front",
     "chore-pin",
-    "jump-pin",
     "jump-socks-pair",
-    "jump-socks-detail",
     "one-clock-wall",
+    "vocal-socks"
+  ],
+  "archivedStudyImageIds": [
+    "jump-pin",
+    "jump-socks-detail",
     "one-clock-angle",
     "vocal-pin",
-    "vocal-socks",
     "vocal-socks-alt",
     "vocal-socks-detail"
   ],

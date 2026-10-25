@@ -1,6 +1,6 @@
 # Resilient Explorations
 
-A quiet digital exhibition: a showcase of this stage’s exploration through image, gesture, and object. The opening uses the `chore` drawing; the closing invitation uses `one`. The vertical gallery presents 16 selected images, with twelve object views gathered in six minimal pairings. The remaining emergency references stay out of the public sequence. Object interpretations remain studies with no cart, checkout, price, stock, or availability claim. Telegram `@thicklll` is the sole contact.
+A quiet digital exhibition: a showcase of this stage’s exploration through image, gesture, and object. The opening uses the `chore` drawing; the closing invitation uses `one`. The vertical gallery presents four image studies and six selected object views. Six repetitive object views are archived outside the public sequence, and the emergency references stay out of view. Object interpretations remain studies with no cart, checkout, price, stock, or availability claim. Telegram `@thicklll` is the sole contact.
 
 Live site: <https://pocsi2.github.io/Gal/>.
 
@@ -31,7 +31,7 @@ The static export is written to `out/`. `npm run preview` serves it locally at `
 ## Image pipeline
 
 - `assets/originals/` contains unchanged copies of 28 unique images from the supplied folder. The 29-file inventory includes one exact duplicate, which is documented but not repeated in the visual sequence.
-- `exhibitionImageIds` in `src/content/gallery.json` selects the 16 works. `chore` is assigned to the opening and `one` to the closing invitation; the remaining emergency references stay out of the exhibition sequence.
+- `exhibitionImageIds` in `src/content/gallery.json` selects the ten public works. Six repetitive object views are listed under `archivedStudyImageIds`; the twelve emergency references remain separate. `chore` is assigned to the opening and `one` to the closing invitation.
 - `assets/image-sources.json` maps the source files to stable IDs, image descriptions, filename-led groups, and presentation roles.
 - Run `npm run assets:build` to generate responsive WebP variants in `public/images/` and update `src/content/generated-manifest.json`.
 - The static exhibition uses native `srcset` and `sizes`; it does not require a runtime image optimizer. The image pipeline also samples a restrained, darkened ground color for each image so the exhibition atmosphere shifts with the artwork.
@@ -50,7 +50,7 @@ The workflow computes the correct repository path for both project pages and `us
 
 ## Design and motion
 
-The exhibition follows `docs/design-board.md`. It is a native vertical gallery with four large image hangings and one staggered wall holding all twelve selected object views together. Each image is presented at a scale suited to its natural orientation, against a muted color sampled from its outer edge. There is no carousel or autoplay. Reduced-motion visitors receive a static, complete presentation. Scroll remains native, with no WebGL, scroll hijacking, hover-only action, cart, or checkout.
+The exhibition follows `docs/design-board.md`. It is a native vertical gallery with four large image hangings and six selected object studies in one asymmetric composition. Repetitive angles and close-up variants are archived outside the public sequence. There is no carousel or autoplay. Reduced-motion visitors receive a static, complete presentation. Scroll remains native, with no WebGL, scroll hijacking, hover-only action, cart, or checkout.
 
 ## Project structure
 
