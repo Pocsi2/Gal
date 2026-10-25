@@ -1,4 +1,4 @@
-# Explorations — 2026
+# Speechless exploration & Self destructive reparations.
 
 A quiet digital exhibition: a showcase of this year's exploration through image, gesture, and object. The opening leads into a vertical gallery of 16 selected images. Twelve images remain preserved as emergency references and are omitted from the public exhibition. A motion-led matching room invites visitors to bring together three pairs of views of the same object. Object interpretations remain studies with no cart, checkout, price, stock, or availability claim. Telegram `@thicklll` is the sole contact.
 

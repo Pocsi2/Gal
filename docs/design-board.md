@@ -1,4 +1,4 @@
-# Design board — Explorations / 2026
+# Design board — Speechless exploration & Self destructive reparations.
 
 **Review direction · Vertical exhibition with object matching · Updated for review**
 
@@ -8,7 +8,7 @@ The site presents a showcase of this year’s exploration as a quiet exhibition.
 
 | Moment | Composition | Words on screen | Interaction / motion |
 |---|---|---|---|
-| Enter | One work fills a dark opening scene. Artist identity and entry cue remain spare. | **A year of looking.** / “A showcase of this year’s exploration through image, gesture and object.” / `ENTER THE EXHIBITION · 16 WORKS` | The image resolves once. The entry cue moves to the exhibition. |
+| Enter | One work fills a dark opening scene. Artist identity and entry cue remain spare. | **Speechless exploration & Self destructive reparations.** / “A showcase of this year’s exploration through image, gesture and object.” / `ENTER THE EXHIBITION · 16 WORKS` | The image resolves once. The entry cue moves to the exhibition. |
 | Image studies | Four large wall hangings, one at a time through native vertical scroll. Each keeps its original aspect ratio and receives generous surrounding space. | `IMAGE STUDY` and a quiet sequence number | The four works use alternating placement and scale. IntersectionObserver reveals each wall gently. |
 | Object studies | Six object images appear as a staggered wall installation. Six related views are held back for a quiet matching room. | `OBJECT STUDY` and a sequence number | Native page scroll; no sales claims. |
 | Matching room | Six images sit apart in an irregular field, like prints waiting to be brought together. A correct pair resolves into a paired object study. | “Bring them together.” / pair count / understated feedback | Drag one view over its match, or select two images in sequence. No timer, score, or penalty. Reset returns all six images to the room. |
@@ -19,7 +19,7 @@ The site presents a showcase of this year’s exploration as a quiet exhibition.
 | Element | Direction |
 |---|---|
 | Color | Near-black room tone. Each wall uses a darkened color sampled from the image’s outer edge, with a soft blurred echo for atmosphere. |
-| Typography | Restrained sans labels and a single editorial serif italic for selected large phrases. |
+| Typography | One restrained sans-serif family for display, labels and body copy. Title set in plain weight with compact leading; no display serif or decorative italics. |
 | Scale | The four primary images receive near-viewport hangings. Object studies use an irregular, museum-like wall arrangement. |
 | Space | Wide margins and uneven intervals create distinct encounters rather than a product grid or carousel. |
 | Navigation | A minimal fixed identity, a direct “Exhibition” link, and a visible entry cue. Scroll stays native. |

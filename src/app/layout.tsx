@@ -3,10 +3,10 @@ import './globals.css';
 import GalleryMotion from '@/components/GalleryMotion';
 
 export const metadata: Metadata = {
-  title: 'Explorations — 2026',
+  title: 'Speechless exploration & Self destructive reparations.',
   description: 'A showcase of this year’s exploration through image, gesture and object.',
   openGraph: {
-    title: 'Explorations — 2026',
+    title: 'Speechless exploration & Self destructive reparations.',
     description: 'A showcase of this year’s exploration through image, gesture and object.',
     type: 'website',
   },
