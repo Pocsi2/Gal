@@ -3,6 +3,38 @@
     "imageId": "jump",
     "alt": "Two figures face one another in a dark, luminous scene"
   },
+  "exhibitionImageIds": [
+    "jump",
+    "vocal",
+    "image-hand",
+    "image-eye",
+    "chore-cushion",
+    "chore-dress-front",
+    "chore-pin",
+    "jump-pin",
+    "jump-socks-pair",
+    "jump-socks-detail",
+    "one-clock-wall",
+    "one-clock-angle",
+    "vocal-pin",
+    "vocal-socks",
+    "vocal-socks-alt",
+    "vocal-socks-detail"
+  ],
+  "emergencyReferenceImageIds": [
+    "chore",
+    "one",
+    "chore-cushion-alt",
+    "chore-dress-flat",
+    "chore-dress",
+    "chore-pin-reverse",
+    "jump-pin-reverse",
+    "jump-socks-alt",
+    "jump-socks",
+    "one-clock-set",
+    "one-clock",
+    "vocal-pin-reverse"
+  ],
   "artworks": [
     {
       "id": "work-01",

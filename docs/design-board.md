@@ -1,47 +1,47 @@
 # Design board — Explorations / 2026
 
-**Review direction · Benchmark image field · Implemented for the GitHub Pages review**
+**Review direction · Vertical digital exhibition · Updated for review**
 
-The site should show the full body of this year's exploration while keeping the interface quiet. The first image is an invitation into the collection; it is not the only image. The collection contains 29 files, including one exact duplicate, so the visual sequence presents all 28 distinct images.
+The site presents a showcase of this year’s exploration as a quiet exhibition. Sixteen selected images are shown in a vertical, paced sequence. Twelve images remain preserved in the source archive as emergency references and are not rendered in public view.
 
 ## Experience tableau
 
 | Moment | Composition | Words on screen | Interaction / motion |
 |---|---|---|---|
-| Enter | One artwork fills a near-black viewport. The copy sits low and left; a small count and explicit action make the larger collection discoverable. | **A year of looking.** / “A showcase of this year’s exploration through image, gesture and object.” / `ENTER THE IMAGE FIELD · 28 IMAGES` | The lead image resolves once. The entry action scrolls to the full image sequence. |
-| Image field | A soft, darkened color sampled from each image washes across the page and stage. The image is presented at its natural aspect ratio, with a distinct scale for landscape, portrait, and square compositions. | `IMAGE FIELD / 2026` / `01 — 28` | Previous/next controls, left/right keys, touch swipe, and direct selection from a horizontal 28-frame filmstrip. The active image changes with one short blur-to-focus transition. No autoplay. |
-| Image studies | Six primary image studies appear first, each full-frame and uncropped where the source allows. | `IMAGE STUDY` and a running number | Every image can be selected directly. Titles, years, and media remain absent until confirmed. |
-| Object studies | Twenty-two visual object studies follow in the same sequence. No product-card language, specifications, or sales claims. | `OBJECT STUDY` and a running number | The same controls and image index apply. The one exact duplicate clock image is not repeated. |
-| Index | A horizontal filmstrip of 28 visual selectors sits beneath the active composition. It suggests a contact sheet or exhibition sequence, not a storefront grid. | Image count and frame number | Tap/click a frame to jump; active frame receives a restrained outline. The strip scrolls sideways on touch screens. |
-| Invitation | A quiet closing image field leads to one human contact action. | **If something stays with you, let’s talk.** / `@thicklll` | Copy the Telegram handle. No other contact channel, cart, or checkout. |
+| Enter | One work fills a dark opening scene. Artist identity and entry cue remain spare. | **A year of looking.** / “A showcase of this year’s exploration through image, gesture and object.” / `ENTER THE EXHIBITION · 16 WORKS` | The image resolves once. The entry cue moves to the exhibition. |
+| Image studies | Four large wall hangings, one at a time through native vertical scroll. Each keeps its original aspect ratio and receives generous surrounding space. | `IMAGE STUDY` and a quiet sequence number | The four works use alternating placement and scale. IntersectionObserver reveals each wall gently. |
+| Object studies | Twelve object images appear later as a staggered wall installation with varied widths and substantial negative space. | `OBJECT STUDY` and a sequence number | Touch and mouse use ordinary page scroll. Objects are presented as visual studies, with no sales claims. |
+| Closing | The exhibition ends with a small colophon and one direct human invitation. | `END OF THIS YEAR’S EXPLORATION` / `@thicklll` | A single Telegram contact action. No checkout. |
 
 ## Visual system
 
 | Element | Direction |
 |---|---|
-| Color | Near-black `#090909`, soft white `#ecebe7`, and one warm paper interruption. A muted, darkened color sampled from the image's outer edge creates a backdrop that recedes into its background. |
-| Typography | One neutral sans for navigation and labels; a restrained editorial serif italic for a few large phrases. |
-| Scale | One active image at a time, naturally sized according to its aspect ratio, with a clear count and quiet horizontal filmstrip. No product-card layout. |
-| Space | Large margins around the image, but a clear invitation to explore so the first image does not read as the whole site. |
-| Texture | The active image creates its own low-opacity blurred field. No decorative grain, neon, gold, or heavy glass effects. |
-| Navigation | Visible image count, previous/next, keyboard arrows, touch swipe, and 28 direct image selectors. |
-| Contact | Telegram `@thicklll` only. The handle is copyable; no unverified destination link is used. |
+| Color | Near-black room tone. Each wall uses a darkened color sampled from the image’s outer edge, with a soft blurred echo for atmosphere. |
+| Typography | Restrained sans labels and a single editorial serif italic for selected large phrases. |
+| Scale | The four primary images receive near-viewport hangings. Object studies use an irregular, museum-like wall arrangement. |
+| Space | Wide margins and uneven intervals create distinct encounters rather than a product grid or carousel. |
+| Navigation | A minimal fixed identity, a direct “Exhibition” link, and a visible entry cue. Scroll stays native. |
+| Contact | Telegram `@thicklll` only. No unverified contact URLs. |
 
 ## Motion principles
 
-- The opening resolves once and then holds.
-- A selected frame changes with a single restrained blur-to-focus transition; no persistent movement or autoplay.
-- CSS handles the transition; native pointer events support swiping; keyboard arrows and buttons provide equivalent access.
-- Reduced motion removes transition movement while preserving the complete index and all navigation.
-- The active image uses responsive WebP variants. Index images use the smallest responsive candidates and native lazy loading.
+- The opening resolves once and holds.
+- Each hanging enters through a short, restrained reveal as it reaches the viewport.
+- There is no auto-advance, carousel, horizontal gesture dependency, or scroll hijacking.
+- Reduced-motion visitors receive the full static exhibition without reveal clipping or transitions.
+- Images use responsive WebP variants and native lazy loading.
 
-## Content guardrails
+## Image selection
 
-The site says it is a showcase of this year's exploration. It displays 28 distinct images from the source folder; one exact duplicate remains documented in the full 29-file asset manifest but is not shown twice. Image descriptions reflect visible content. Titles, years, media, edition, dimensions, material, availability, and prices remain unclaimed. Object-to-artwork relationships remain unconfirmed. Telegram `@thicklll` is the only contact.
+- The public exhibition contains 16 images selected by ID in `src/content/gallery.json`.
+- The 12 artist-designated emergency references stay in the source files and image manifest, but the exhibition component does not render them.
+- All 28 distinct images remain preserved, with the duplicate documented separately in the asset manifest.
+- Titles, years, media, object details, artwork associations, price, and availability remain unclaimed until confirmed.
 
 ## Review points
 
-1. Does the image field make the full collection obvious from the opening?
-2. Does frame-by-frame movement feel like a digital exhibition rather than a standard carousel?
-3. Does the visual index help visitors find images without competing with the active work?
-4. Confirm names, dates, media, object associations, and the Telegram destination before adding them.
+1. Does the vertical pacing feel like entering a gallery room?
+2. Do the four large works lead the experience before the object wall?
+3. Does the staggered object arrangement keep the images central and avoid a shop feel?
+4. Are the twelve withheld images correctly preserved for emergency reference?

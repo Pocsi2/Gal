@@ -1,6 +1,6 @@
 # Explorations — 2026
 
-A quiet digital exhibition: a showcase of this year's exploration through image, gesture, and object. The opening is a single artwork; the image field then makes all 28 distinct images available through a full-frame viewer, keyboard and touch navigation, and a complete visual index. Object interpretations remain studies with no cart, checkout, price, stock, or availability claim. Telegram `@thicklll` is the sole contact.
+A quiet digital exhibition: a showcase of this year's exploration through image, gesture, and object. The opening leads into a vertical gallery of 16 selected images. Twelve images remain preserved as emergency references and are omitted from the public exhibition. Object interpretations remain studies with no cart, checkout, price, stock, or availability claim. Telegram `@thicklll` is the sole contact.
 
 Live site: <https://pocsi2.github.io/Gal/>.
 
@@ -31,15 +31,16 @@ The static export is written to `out/`. `npm run preview` serves it locally at `
 ## Image pipeline
 
 - `assets/originals/` contains unchanged copies of 28 unique images from the supplied folder. The 29-file inventory includes one exact duplicate, which is documented but not repeated in the visual sequence.
+- `exhibitionImageIds` in `src/content/gallery.json` selects the 16 public works. `emergencyReferenceImageIds` preserves the 12 images omitted from the exhibition.
 - `assets/image-sources.json` maps the source files to stable IDs, image descriptions, filename-led groups, and presentation roles.
 - Run `npm run assets:build` to generate responsive WebP variants in `public/images/` and update `src/content/generated-manifest.json`.
-- The static image field uses native `srcset` and `sizes`; it does not require a runtime image optimizer. The image pipeline also samples a restrained, darkened ground color for each image so the exhibition atmosphere shifts with the artwork.
+- The static exhibition uses native `srcset` and `sizes`; it does not require a runtime image optimizer. The image pipeline also samples a restrained, darkened ground color for each image so the exhibition atmosphere shifts with the artwork.
 - Original assets are kept outside `public/`; only optimized derivatives are served.
 - The full read-only inventory is in `docs/asset-manifest.csv` and `docs/asset-manifest.json`.
 
 ## Content editing
 
-Unconfirmed artwork facts remain `null` in `src/content/gallery.json`. The six image studies have no invented titles, years, or media. The 22 object studies have no asserted artwork association, specifications, price, or availability. `src/config/contact.json` is the only contact configuration; it contains Telegram `@thicklll` only. The visible handle is copyable. The destination is not linked until verified.
+Unconfirmed artwork facts remain `null` in `src/content/gallery.json`. The six catalogued image studies have no invented titles, years, or media. The 22 object studies have no asserted artwork association, specifications, price, or availability. The 12 emergency references remain in the source archive and are not rendered in the exhibition. `src/config/contact.json` is the only contact configuration; it contains Telegram `@thicklll` only. The visible handle is copyable. The destination is not linked until verified.
 
 ## GitHub Pages
 
@@ -49,13 +50,13 @@ The workflow computes the correct repository path for both project pages and `us
 
 ## Design and motion
 
-The image field follows `docs/design-board.md`. The visitor can move frame by frame, use left/right keys, swipe on touch screens, or choose from the complete horizontal filmstrip. Each image is presented at a scale suited to its natural orientation, against a color sampled from the image itself. CSS provides a restrained image transition and a blurred echo of the active frame; there is no auto-advance. Reduced-motion visitors receive a static, complete presentation. Scroll remains native, with no WebGL, scroll hijacking, hover-only action, cart, or checkout.
+The exhibition follows `docs/design-board.md`. It is a native vertical gallery with four large image hangings and a staggered object wall. Each image is presented at a scale suited to its natural orientation, against a muted color sampled from its outer edge. There is no carousel or autoplay. Reduced-motion visitors receive a static, complete presentation. Scroll remains native, with no WebGL, scroll hijacking, hover-only action, cart, or checkout.
 
 ## Project structure
 
 ```text
 src/app/                 static page, metadata, and global CSS
-src/components/          responsive image, image explorer, reveal behavior, Telegram action
+src/components/          responsive image, gallery exhibition, reveal behavior, Telegram action
 src/config/              centralized contact configuration
 src/content/             artwork/object data and generated image map
 src/lib/                 GitHub Pages base-path helper

@@ -1,17 +1,17 @@
 import gallery from '@/content/gallery.json';
 import ResponsiveImage from '@/components/ResponsiveImage';
-import ImageExplorer from '@/components/ImageExplorer';
+import GalleryExhibition from '@/components/GalleryExhibition';
 import TelegramInvitation from '@/components/TelegramInvitation';
 
 export default function Home() {
   const opening = gallery.opening;
-  const imageCount = gallery.artworks.length + gallery.objects.length;
+  const imageCount = gallery.exhibitionImageIds.length;
 
   return (
     <main id="top">
       <header className="masthead">
         <a className="signature" href="#top" aria-label="Explorations, 2026">EXPLORATIONS <span>/</span> 2026</a>
-        <a className="index-link" href="#exploration">Explore <span>{String(imageCount).padStart(2, '0')} IMAGES</span></a>
+        <a className="index-link" href="#exhibition">Exhibition <span>{String(imageCount).padStart(2, '0')} WORKS</span></a>
       </header>
 
       <section className="opening" aria-labelledby="opening-title">
@@ -28,11 +28,11 @@ export default function Home() {
           <h1 id="opening-title">A year<br />of <em>looking.</em></h1>
           <p className="intro">A showcase of this year’s exploration<br className="desktop-break" /> through image, gesture and object.</p>
         </div>
-        <a className="scroll-cue" href="#exploration"><span>Enter the image field · {imageCount} images</span><i aria-hidden="true">↓</i></a>
+        <a className="scroll-cue" href="#exhibition"><span>Enter the exhibition · {imageCount} works</span><i aria-hidden="true">↓</i></a>
         <span className="frame-count" aria-hidden="true">01 — {String(imageCount).padStart(2, '0')}</span>
       </section>
 
-      <ImageExplorer />
+      <GalleryExhibition />
 
       <TelegramInvitation />
     </main>

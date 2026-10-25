@@ -10,8 +10,16 @@ const records = [...gallery.artworks, ...gallery.objects];
 if (!gallery.opening.alt?.trim()) errors.push('Missing opening image alt text.');
 if (gallery.artworks.some((work) => work.title !== null || work.year !== null || work.medium !== null)) errors.push('Unconfirmed artwork metadata must remain null.');
 if (gallery.objects.some((object) => object.associationConfirmed !== false)) errors.push('Unconfirmed object associations must remain unconfirmed.');
-if (new Set(records.map((record) => record.imageId)).size !== manifest.images.length) errors.push('Every unique source image must appear in the image field exactly once.');
-const referencedIds = [gallery.opening.imageId, ...records.map((record) => record.imageId)];
+const exhibitionIds = gallery.exhibitionImageIds ?? [];
+const emergencyIds = gallery.emergencyReferenceImageIds ?? [];
+const catalogIds = new Set(records.map((record) => record.imageId));
+const assignedIds = [...exhibitionIds, ...emergencyIds];
+if (new Set(assignedIds).size !== manifest.images.length || assignedIds.some((id) => !catalogIds.has(id))) {
+  errors.push('Every source image must be assigned once to the exhibition or emergency references.');
+}
+if (exhibitionIds.length !== 16) errors.push('The public exhibition must contain 16 selected images.');
+if (emergencyIds.length !== 12) errors.push('The emergency reference list must contain 12 images.');
+const referencedIds = [gallery.opening.imageId, ...assignedIds];
 const seenIds = new Set();
 const assetsById = new Map(manifest.images.map((image) => [image.id, image]));
 
@@ -34,13 +42,13 @@ for (const imageId of referencedIds) {
   }
 }
 if (contacts.platform !== 'Telegram' || contacts.handle !== '@thicklll') errors.push('The only configured contact must be Telegram @thicklll.');
-if (gallery.artworks.length !== 6) errors.push('Expected six primary image studies from the supplied collection.');
-if (gallery.objects.length !== 22) errors.push('Expected all 22 distinct object studies from the supplied collection.');
+if (gallery.artworks.length !== 6) errors.push('Expected six catalogued image studies from the supplied collection.');
+if (gallery.objects.length !== 22) errors.push('Expected all 22 catalogued object studies from the supplied collection.');
 if (gallery.objects.some((object) => object.availability !== null || object.price !== null)) errors.push('Availability and price must stay unconfirmed.');
 if (errors.length) {
   console.error(errors.map((error) => `- ${error}`).join('\n'));
   process.exitCode = 1;
 } else {
-  console.log(`Content checks passed: ${gallery.artworks.length} image studies, ${gallery.objects.length} object studies, ${manifest.images.length} distinct source images, Telegram only.`);
+  console.log(`Content checks passed: ${exhibitionIds.length} exhibited images, ${emergencyIds.length} emergency references, ${manifest.images.length} distinct source images, Telegram only.`);
 }
 

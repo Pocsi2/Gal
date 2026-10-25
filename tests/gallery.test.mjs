@@ -59,18 +59,20 @@ test('the responsive and reduced-motion compositions are present', async () => {
   assert.match(imageComponent, /sizes=/);
 });
 
-test('the image field supports keyboard, touch and thumbnail navigation', async () => {
-  const explorer = await readFile(path.join(root, 'src/components/ImageExplorer.tsx'), 'utf8');
-  assert.match(explorer, /ArrowRight/);
-  assert.match(explorer, /ArrowLeft/);
-  assert.match(explorer, /onPointerDown/);
-  assert.match(explorer, /aria-current/);
+test('the exhibition shows 16 selected images and keeps 12 emergency references out of view', async () => {
+  const exhibition = await readFile(path.join(root, 'src/components/GalleryExhibition.tsx'), 'utf8');
+  assert.equal(gallery.exhibitionImageIds.length, 16);
+  assert.equal(gallery.emergencyReferenceImageIds.length, 12);
+  assert.equal(gallery.exhibitionImageIds.some((id) => gallery.emergencyReferenceImageIds.includes(id)), false);
+  assert.match(exhibition, /primary-gallery/);
+  assert.match(exhibition, /object-gallery/);
+  assert.doesNotMatch(exhibition, /aria-roledescription="carousel"/);
 });
 
 test('keyboard skip access and a live contact status are included', async () => {
   const layout = await readFile(path.join(root, 'src/app/layout.tsx'), 'utf8');
   const contactComponent = await readFile(path.join(root, 'src/components/TelegramInvitation.tsx'), 'utf8');
-  assert.match(layout, /Skip to the image field/);
+  assert.match(layout, /Skip to the exhibition/);
   assert.match(contactComponent, /aria-live="polite"/);
   assert.match(contactComponent, /Copy Telegram handle/);
 });
