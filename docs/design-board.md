@@ -2,13 +2,13 @@
 
 **Review direction · Vertical exhibition with unified object wall · Updated for review**
 
-The site presents a showcase of this year’s exploration as a quiet exhibition. Sixteen selected images are shown in a vertical, paced sequence. Twelve images remain preserved in the source archive as emergency references and are not rendered in public view.
+The site presents a showcase of this year’s exploration as a quiet exhibition. Sixteen selected images are shown in a vertical, paced sequence. The drawings `chore` and `one` sit behind the sequence as low-contrast, slowly moving ambient layers; they are not shown as separate works. The remaining emergency references stay out of the public sequence.
 
 ## Experience tableau
 
 | Moment | Composition | Words on screen | Interaction / motion |
 |---|---|---|---|
-| Enter | One work fills a dark opening scene. Artist identity and entry cue remain spare. | **Resilient abuse & Speechless explorations.** / “A showcase of this year’s exploration through image, gesture and object.” / `ENTER THE EXHIBITION · 16 WORKS` | The image resolves once. The entry cue moves to the exhibition. |
+| Enter | One work fills a dark opening scene with the `chore` and `one` line drawings floating faintly behind it. | **Resilient abuse & Speechless explorations.** / “A showcase of this year’s exploration through image, gesture and object.” / `ENTER THE EXHIBITION · 16 WORKS` | The two ambient drawings drift by a few pixels over long intervals; they never compete with the foreground work. |
 | Image studies | Four large wall hangings, one at a time through native vertical scroll. Each keeps its original aspect ratio and receives generous surrounding space. | `IMAGE STUDY` and a quiet sequence number | The four works use alternating placement and scale. IntersectionObserver reveals each wall gently. |
 | Object studies | All twelve object images appear together in one staggered wall installation. Related views sit in the same visual field. | `OBJECT STUDY` and a sequence number / “Six designs applied, by the same hands” | Native page scroll; no sales claims. The images are presented together, with no separate interaction section. |
 | Closing | The exhibition ends with a small colophon and one direct human invitation. | `END OF THIS YEAR’S EXPLORATION` / `@thicklll` | A single Telegram contact action. No checkout. |
@@ -27,6 +27,7 @@ The site presents a showcase of this year’s exploration as a quiet exhibition.
 ## Motion principles
 
 - The opening resolves once and holds.
+- The `chore` drawing is inverted into a pale line on the dark ground; `one` is lifted gently from its black canvas. Both move slowly behind the work, with opacity kept low.
 - Each hanging enters through a short, restrained reveal as it reaches the viewport.
 - There is no auto-advance, carousel, horizontal gesture dependency, or scroll hijacking.
 - Reduced-motion visitors receive the full static exhibition without reveal clipping or transitions.
@@ -35,7 +36,7 @@ The site presents a showcase of this year’s exploration as a quiet exhibition.
 ## Image selection
 
 - The public exhibition contains 16 images selected by ID in `src/content/gallery.json`.
-- The 12 artist-designated emergency references stay in the source files and image manifest, but the exhibition component does not render them.
+- All 12 emergency reference IDs remain recorded. `chore` and `one` are used only as ambient backgrounds; they do not appear as separate numbered works. The other ten remain out of the public sequence.
 - All 28 distinct images remain preserved, with the duplicate documented separately in the asset manifest.
 - Titles, years, media, object details, artwork associations, price, and availability remain unclaimed until confirmed.
 

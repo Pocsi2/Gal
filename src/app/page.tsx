@@ -2,6 +2,7 @@ import gallery from '@/content/gallery.json';
 import ResponsiveImage from '@/components/ResponsiveImage';
 import GalleryExhibition from '@/components/GalleryExhibition';
 import TelegramInvitation from '@/components/TelegramInvitation';
+import AmbientArtworks from '@/components/AmbientArtworks';
 
 export default function Home() {
   const opening = gallery.opening;
@@ -9,6 +10,7 @@ export default function Home() {
 
   return (
     <main id="top">
+      <AmbientArtworks />
       <header className="masthead">
         <a className="signature" href="#top" aria-label="Resilient abuse and speechless explorations">RESILIENT ABUSE</a>
         <a className="index-link" href="#exhibition">Exhibition <span>{String(imageCount).padStart(2, '0')} WORKS</span></a>
