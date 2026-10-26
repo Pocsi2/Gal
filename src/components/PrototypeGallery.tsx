@@ -159,7 +159,7 @@ export default function PrototypeGallery() {
         )}
         <div className={styles.contactCopy}>
           <p className={styles.kicker}>AFTER THE EXHIBITION</p>
-          <h2 id="contact-title">If something<br /><i>calls you,</i><br />let’s talk direct.</h2>
+          <h2 id="contact-title">If something<br /><i>calls you,</i><br />request it directly.</h2>
           <p>For questions about an object, write to the artist.</p>
           <a className={styles.telegram} href="https://t.me/thicklll" target="_blank" rel="noreferrer">
             <span>Telegram</span><strong>@thicklll</strong><span aria-hidden="true">↗</span>
