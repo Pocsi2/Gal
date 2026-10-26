@@ -76,6 +76,7 @@ export default function GalleryExhibition() {
               className={`object-work object-work--${String(index + 1).padStart(2, '0')}`}
               key={item.id}
               data-reveal
+              tabIndex={0}
             >
               <div className="object-work-wall">
                 {/* eslint-disable-next-line @next/next/no-img-element -- Static export uses locally generated responsive WebP variants. */}
