@@ -43,7 +43,6 @@ export default function OneArtwork({
         {/* eslint-disable-next-line @next/next/no-img-element -- Uses the pre-generated responsive image manifest. */}
         <img src={src} srcSet={srcSet} sizes="(max-width: 700px) 56vw, 38vw" width={width} height={height} alt="" loading="lazy" decoding="async" />
       </span>
-      <span className={styles.polarityHint} aria-hidden="true">MOVE TO REVEAL · TAP TO INVERT</span>
     </button>
   );
 }

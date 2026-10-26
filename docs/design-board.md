@@ -30,7 +30,7 @@ Present the supplied works as a record of this year's exploration. The interface
 - **Transitions:** Native scroll and short CSS crossfades; foreground art stays crisp while a same-image echo creates depth.
 - **Typography:** One neutral sans family, thin display weight, compact uppercase wayfinding.
 - **Objects:** All six works appear together as a loose “study table”; focus expands one image while the rest soften. The lower-corner sock pair is held smaller within its frame so both socks remain visible. No unverified object-to-artwork pairing is implied.
-- **Contact:** A larger rendering of one closes the sequence; a pointer-following polarity lens reveals white linework on black. Touch and keyboard activation toggle the full inversion. The Telegram invitation remains direct, with @thicklll visible as fallback.
+- **Contact:** A larger rendering of one closes the sequence; a broad pointer-following polarity lens reveals softly translucent white linework on black. Touch and keyboard activation toggle the full inversion. The Telegram invitation remains direct, with @thicklll visible as fallback.
 - **Mobile:** Recompose the table as two columns; keep tap/focus reveal and reduce movement.
 - **Complexity:** Low; existing Next static export, CSS, semantic HTML, existing content and image variants.
 - **Strength:** Distinctive pacing with low dependency and performance cost.
