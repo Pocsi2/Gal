@@ -33,15 +33,14 @@
 @media(prefers-reduced-motion:reduce){.invitation-image img{animation:none!important;transform:none!important}}
 
 /* Six distinct object studies, hung as one quiet editorial composition. */
-.object-gallery{width:min(100%,900px);display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:repeat(16,minmax(22px,3.2vw));gap:.8vw .65vw}
+.object-gallery{width:min(100%,1120px);display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:repeat(16,minmax(24px,3.6vw));gap:.8vw .65vw}
 .object-work,.object-work:nth-child(n){width:auto;height:auto;min-height:0;background:#e9e8e2;grid-column:auto;grid-row:auto;transform:none;transition:opacity .7s var(--ease)}
 .object-work:nth-child(1){grid-column:1/span 4;grid-row:1/span 5}.object-work:nth-child(2){grid-column:5/span 3;grid-row:2/span 6}.object-work:nth-child(3){grid-column:8/span 2;grid-row:3/span 4}.object-work:nth-child(4){grid-column:10/span 3;grid-row:2/span 6}.object-work:nth-child(5){grid-column:2/span 5;grid-row:9/span 6}.object-work:nth-child(6){grid-column:7/span 5;grid-row:10/span 6}
 .object-work-wall{background:#e9e8e2}
 .object-work .wall-echo{display:none}
-.object-work-wall img{max-width:80%;max-height:76%;filter:none;transition:transform 1s var(--ease)}
-.object-work--02 .object-work-wall img{width:84%;height:84%;max-width:none;max-height:none;object-fit:cover;object-position:center bottom;filter:grayscale(1)}
+.object-work-wall img{max-width:90%;max-height:84%;filter:none;transition:transform 1s var(--ease)}
 .object-work:hover .object-work-wall img{transform:scale(1.035)}
 .object-work figcaption{left:.7rem;right:auto;bottom:.6rem;padding:0;background:none;color:rgba(28,27,25,.48);font-size:7px;letter-spacing:.14em}
-@media(max-width:800px){.object-gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:clamp(170px,32vw,250px);gap:1rem}.object-work,.object-work:nth-child(n){grid-column:auto;grid-row:auto}}
-@media(max-width:560px){.object-gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:clamp(140px,42vw,190px);gap:.6rem;width:100%}.object-work-wall img{max-width:84%;max-height:72%}.object-work--02 .object-work-wall img{width:88%;height:82%}.object-work figcaption{left:.45rem;bottom:.4rem}}
+@media(max-width:800px){.object-gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:clamp(190px,38vw,290px);gap:1rem}.object-work,.object-work:nth-child(n){grid-column:auto;grid-row:auto}}
+@media(max-width:560px){.object-gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:clamp(150px,48vw,220px);gap:.6rem;width:100%}.object-work-wall img{max-width:90%;max-height:78%}.object-work figcaption{left:.45rem;bottom:.4rem}}
 @media(prefers-reduced-motion:reduce){.object-work-wall img{transition:none!important;transform:none!important}}
