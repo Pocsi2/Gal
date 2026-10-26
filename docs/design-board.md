@@ -1,48 +1,108 @@
 # Design board — Resilient Explorations
 
-**Review direction · Vertical exhibition with a curated object composition · Updated for review**
+Status: local review concept. No deployment or change to the existing home route.
 
-The site presents a showcase of this stage’s exploration as a quiet exhibition. Ten selected images are shown in a vertical, paced sequence. `chore` opens the exhibition and `one` returns at the closing invitation. Repetitive object views are archived; emergency references stay out of the public sequence.
+## Intent
 
-## Experience tableau
+Present the supplied works as a record of this year's exploration. The interface should recede, let images carry the experience, and end in one direct human invitation through Telegram. Keep the existing near-black / white palette and contemporary minimal typography; do not invent artwork facts or merchandise terms.
 
-| Moment | Composition | Words on screen | Interaction / motion |
-|---|---|---|---|
-| Enter | The `chore` line drawing replaces the opening image. It is inverted into a pale drawing on the dark ground. | **Resilient Explorations** / “A showcase of this stage’s exploration through image, gesture and object.” / `ENTER THE EXHIBITION · 10 WORKS` | The drawing resolves into view with the existing slow opening movement. |
-| Image studies | Four large wall hangings, one at a time through native vertical scroll. Each keeps its original aspect ratio and receives generous surrounding space. | `IMAGE STUDY` and a quiet sequence number | The four works use alternating placement and scale. IntersectionObserver reveals each wall gently. |
-| Object studies | Six distinct object views gather as one asymmetric display on pale image plates against the dark exhibition ground. Repeated angles and details are archived. | **A Life of looking.** / “Frames from this stage’s exploration.” / “Move through them at your own pace.” / “Six designs applied, by the same hands” | The composition stays still; a soft image scale on hover is optional and reduced-motion safe. |
-| Closing | The `one` drawing replaces the previous closing image and sits beside the direct human invitation. | `END OF THIS YEAR’S EXPLORATION` / `@thicklll` | A slow, restrained drift on the closing image. A single Telegram contact action. No checkout. |
+## Three creative directions
 
-## Visual system
+### 1. Rooms of one — spatial exhibition
 
-| Element | Direction |
-|---|---|
-| Color | Near-black room tone. Each wall uses a darkened color sampled from the image’s outer edge, with a soft blurred echo for atmosphere. |
-| Typography | One extra-light sans-serif family for the title, with compact leading. Labels and body copy remain restrained and clean. |
-| Scale | The four primary images receive near-viewport hangings. Six chosen object studies sit in one compact editorial arrangement. |
-| Space | Wide margins and uneven intervals create distinct encounters rather than a product grid or carousel. |
-| Navigation | A minimal fixed identity, a direct “Exhibition” link, and a visible entry cue. Scroll stays native. |
-| Contact | Telegram `@thicklll` only. No unverified contact URLs. |
+- **Home:** Chore appears alone against a dark field; the exhibition title arrives as a quiet caption.
+- **Navigation:** A small fixed index for Works, Objects, Contact; current position shown as a number.
+- **Artwork:** One work per spacious “wall”, with its source image and a restrained blurred echo forming the wall light.
+- **Transitions:** Scroll reveals each wall with a slow opacity and scale change.
+- **Typography:** Hairline sans for titles; tiny tracked sans for index and metadata.
+- **Objects:** An asymmetrical constellation, one object enlarging on hover or keyboard focus.
+- **Contact:** Closing wall resolves into Telegram invitation.
+- **Mobile:** Vertical walls, touch-first, no hover dependency.
+- **Complexity:** Low–medium; CSS plus existing IntersectionObserver.
+- **Strength:** Maximum contemplation and gallery presence.
+- **Weakness:** Long scroll and a spatial metaphor that may overstate relationships.
 
-## Motion principles
+### 2. The quiet sequence — editorial exhibition (recommended)
 
-- The opening resolves once and holds.
-- `chore` begins the experience; `one` closes it. Both receive a slow, restrained image movement.
-- Each hanging enters through a short, restrained reveal as it reaches the viewport.
-- There is no auto-advance, carousel, horizontal gesture dependency, or scroll hijacking.
-- Reduced-motion visitors receive the full static exhibition without reveal clipping or transitions.
-- Images use responsive WebP variants and native lazy loading.
+- **Home:** A single image and title form a threshold; “A Life of looking” frames the current stage.
+- **Navigation:** Discreet wordmark, Works / Objects / Contact anchors, and a small progress index.
+- **Artwork:** Four large, individually composed frames unfold as one sequence; varied scale and negative space make the images feel curated rather than tiled.
+- **Transitions:** Native scroll and short CSS crossfades; foreground art stays crisp while a same-image echo creates depth.
+- **Typography:** One neutral sans family, thin display weight, compact uppercase wayfinding.
+- **Objects:** All six works appear together as a loose “study table”; focus expands one image while the rest soften. The lower-corner sock pair is held smaller within its frame so both socks remain visible. No unverified object-to-artwork pairing is implied.
+- **Contact:** A final sparse invitation with visible @thicklll and a Telegram link plus readable handle fallback.
+- **Mobile:** Recompose the table as two columns; keep tap/focus reveal and reduce movement.
+- **Complexity:** Low; existing Next static export, CSS, semantic HTML, existing content and image variants.
+- **Strength:** Distinctive pacing with low dependency and performance cost.
+- **Weakness:** More editorial than spatial; image order must carry the rhythm.
 
-## Image selection
+### 3. The matching table — interactive object study
 
-- The public exhibition contains ten images selected by ID in `src/content/gallery.json`: four image studies and six object studies.
-- Six repetitive object views are preserved under `archivedStudyImageIds`; all 12 emergency reference IDs remain recorded separately. `chore` and `one` appear at the beginning and end.
-- All 28 distinct images remain preserved, with the exact duplicate documented separately in the asset manifest.
-- Titles, years, media, object details, artwork associations, price, and availability remain unclaimed until confirmed.
+- **Home:** Title acts as a quiet label above a field of image fragments.
+- **Navigation:** Index opens a compact overlay; direct jump between Works and Objects.
+- **Artwork:** Users drag or tap fragments into a large field; grouped images become a composition.
+- **Transitions:** Pointer-led easing and spring-like movement.
+- **Typography:** Minimal sans with sparse numbered annotations.
+- **Objects:** The main interaction is arranging or matching studies.
+- **Contact:** A contact marker appears at the end of the play sequence.
+- **Mobile:** Tap-to-select and tap-to-place instead of dragging.
+- **Complexity:** Medium–high; needs interaction state, touch handling, and validation of any claimed relationships.
+- **Strength:** Strong play and visitor agency.
+- **Weakness:** Risks turning the archive into a puzzle and falsely asserting object relationships; more code and accessibility/performance work.
 
-## Review points
+## Recommendation
 
-1. Does the vertical pacing feel like entering a gallery room?
-2. Do the four large works lead the experience before the grouped object views?
-3. Do the six selected object views feel varied and easy to scan?
-4. Are the repetitive studies and emergency references kept out of the public display?
+Build **The quiet sequence** as a review prototype. Borrow the depth and single-work pacing of Rooms of one, and the satisfying hover/focus enlargement from the matching table, without claiming unverified matches or requiring a drag game. Use existing images and build tools. Keep the current live route intact and create a separate static /prototype/ route.
+
+## Content rules
+
+Use existing image IDs, alt text, and the framing “A showcase of this stage’s exploration.” Factual title, year, medium, biography, object details, price, edition, availability, and shipping remain absent unless present and verified. The only contact is Telegram @thicklll.
+
+The opening image is chore and the closing image is one, preserving the requested visual bookend. The exhibition uses four selected image studies and six distinct object studies; archived repeats and emergency references remain outside the public route. The image IDs come from the existing gallery content model. The object-section endline reads “A On Objects Impressions.” as requested.
+
+## Design system and motion
+
+- Palette: existing near-black and warm white; no new accent hue.
+- Type: one system sans stack with thin weights; tracked micro-labels.
+- Motion: 450–900ms opacity/transform, restrained easing, no perpetual motion.
+- CSS for hover/focus, image scale, and responsive layout. Existing IntersectionObserver may reveal sections. No GSAP or WebGL: they add little value to this mostly editorial scroll experience.
+- Reduced motion: remove scale/reveal choreography while preserving composition and clear navigation.
+
+## Stack and team
+
+Keep Next.js static export, React, TypeScript, CSS Modules/global tokens, existing sharp-generated WebP variants, and current GitHub workflow. No new dependency. A small team can combine art direction + interaction design, and frontend + performance + accessibility; image processing and GitHub deployment remain covered by the existing scripts/workflow. WebGL/Three.js is not justified.
+
+- **Creative / art direction + UI/UX:** owns image hierarchy, pacing, type, wayfinding, and editing out decoration.
+- **Creative technologist + senior frontend:** owns the React/TypeScript composition, CSS motion primitives, responsive behavior, and integration.
+- **Motion designer:** shapes timing and transitions with the creative technologist; no continuous animation.
+- **Image pipeline + performance:** maintain existing generated variants, explicit dimensions, and mobile loading behavior.
+- **Accessibility + GitHub/DevOps:** verify semantic navigation, keyboard/touch, reduced motion, static export paths, and review/deployment workflow.
+- **WebGL engineer:** not needed for this concept.
+
+Critical Codex skills: art direction, creative frontend, React/Next.js, TypeScript, responsive design, interaction/motion design, image optimization, accessibility, performance, and Git/GitHub. GSAP/ScrollTrigger, Three.js/GLSL, and advanced creative coding stay optional; the selected concept gains little from adding them.
+
+Repository addition is limited to a prototype route and component plus design/implementation notes. Existing `src/content`, generated images, and GitHub Pages export remain the data and deployment path.
+
+## MVP and workflow
+
+1. Preserve main; build a separate prototype route on a local branch.
+2. Show threshold, artwork sequence, object study table, and Telegram close.
+3. Check narrow and wide layouts, keyboard/focus, reduced motion, image paths, and static export.
+4. Review the route locally before any integration or online update.
+
+The prototype's performance budget targets are LCP ≤2.5s, CLS ≤0.1, and INP ≤200ms at the 75th percentile, measured separately for mobile and desktop. The opening image receives high fetch priority from the existing responsive set; below-fold media is lazy-loaded; image dimensions are emitted; no client animation library is added. These are targets, not measurements: a deployed review build must be measured before launch. The thresholds follow the current Core Web Vitals recommendations from [web.dev](https://web.dev/articles/vitals).
+
+## Risks and mitigations
+
+- Large images: use generated responsive srcset, explicit dimensions, lazy loading below the fold.
+- Hover-only behavior: mirror on keyboard focus; show all images on touch.
+- Misleading grouping: keep object studies together but don't label inferred pairings.
+- External contact link: visible @thicklll remains a manual fallback if Telegram can't open.
+- Regression: separate route and branch; rollback by discarding the prototype branch.
+
+## Review questions
+
+1. Does the sequence feel like entering a digital exhibition rather than browsing a store?
+2. Do the four works have enough negative space and variation to hold attention?
+3. Does the object study composition invite exploration without implying unverified pairings?
+4. Does the chore-to-one visual bookend give the visit a satisfying close?
