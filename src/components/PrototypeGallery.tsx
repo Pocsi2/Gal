@@ -5,6 +5,11 @@ import OneArtwork from '@/components/OneArtwork';
 import styles from './PrototypeGallery.module.css';
 
 const assetFor = (id: string) => manifest.images.find((image) => image.id === id);
+const closingVariants = [
+  { path: '/images/one-b-480.webp', width: 480 },
+  { path: '/images/one-b-768.webp', width: 768 },
+  { path: '/images/one-b-932.webp', width: 932 },
+];
 
 const works = gallery.exhibitionImageIds
   .slice(0, 4)
@@ -31,8 +36,7 @@ function imageSet(variants: { path: string; width: number }[]) {
 export default function PrototypeGallery() {
   const opening = assetFor(gallery.opening.imageId);
   const openingImage = opening?.variants.at(-1);
-  const closing = assetFor('one');
-  const closingImage = closing?.variants.at(-1);
+  const closingImage = closingVariants.at(-1)!;
 
   return (
     <main className={styles.gallery} id="top">
@@ -142,15 +146,13 @@ export default function PrototypeGallery() {
       </section>
 
       <section className={styles.contact} id="contact" aria-labelledby="contact-title">
-        <div className={styles.contactEcho} aria-hidden="true" style={{ backgroundImage: closing?.variants[1] ? `url("${withBasePath(closing.variants[1].path)}")` : undefined }} />
-        {closing && closingImage && (
-          <OneArtwork
-            src={withBasePath(closingImage.path)}
-            srcSet={imageSet(closing.variants)}
-            width={closingImage.width}
-            height={closingImage.height}
-          />
-        )}
+        <div className={styles.contactEcho} aria-hidden="true" style={{ backgroundImage: `url("${withBasePath(closingVariants[1].path)}")` }} />
+        <OneArtwork
+          src={withBasePath(closingImage.path)}
+          srcSet={imageSet(closingVariants)}
+          width={closingImage.width}
+          height={Math.round((1599 / 932) * closingImage.width)}
+        />
         <div className={styles.contactCopy}>
           <p className={styles.kicker}>AFTER THE EXHIBITION</p>
           <h2 id="contact-title">If something<br /><i>calls you,</i><br />request it directly.</h2>

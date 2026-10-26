@@ -30,10 +30,11 @@ The static export is written to `out/`. `npm run preview` serves it locally at `
 
 ## Image pipeline
 
-- `assets/originals/` contains unchanged copies of 28 unique images from the supplied folder. The 29-file inventory includes one exact duplicate, which is documented but not repeated in the visual sequence.
-- `exhibitionImageIds` in `src/content/gallery.json` selects the ten public works. Six repetitive object views are listed under `archivedStudyImageIds`; the twelve emergency references remain separate. `chore` is assigned to the opening and `one` to the closing invitation.
+- `assets/originals/` contains unchanged copies of 28 unique images from the supplied folder, plus the separate `One b.jfif` alternate used at the close. The original 29-file inventory includes one exact duplicate, documented but not repeated in the visual sequence.
+- `exhibitionImageIds` in `src/content/gallery.json` selects the ten public works. Six repetitive object views are listed under `archivedStudyImageIds`; the twelve emergency references remain separate. `chore` opens the exhibition and `One b` closes the invitation. The original `one` artwork remains in its existing references.
 - `assets/image-sources.json` maps the source files to stable IDs, image descriptions, filename-led groups, and presentation roles.
 - Run `npm run assets:build` to generate responsive WebP variants in `public/images/` and update `src/content/generated-manifest.json`.
+- Run `npm run assets:closing` to generate transparent responsive variants of the separate `One b` closing image.
 - The static exhibition uses native `srcset` and `sizes`; it does not require a runtime image optimizer. The image pipeline also samples a restrained, darkened ground color for each image so the exhibition atmosphere shifts with the artwork.
 - Original assets are kept outside `public/`; only optimized derivatives are served.
 - The full read-only inventory is in `docs/asset-manifest.csv` and `docs/asset-manifest.json`.
@@ -73,7 +74,7 @@ tests/                    Node built-in content and interaction checks
 - Mobile lead image: target at or below 500 KB; desktop lead image: target at or below 1.2 MB.
 - Keep initial route JavaScript at or below 150 KB compressed where practical.
 - Track LCP at or below 2.5 s, CLS at or below 0.1, and INP at or below 200 ms on a representative mobile profile before public release.
-- The 70 responsive WebP variants total about 2.47 MB; the browser selects only the active full-size image and suitable thumbnail candidates.
+- The 73 responsive WebP variants total about 2.57 MB; the browser selects only the active full-size image and suitable thumbnail candidates.
 
 ## Before public release
 

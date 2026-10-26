@@ -7,6 +7,7 @@
     "build": "next build",
     "typecheck": "tsc --noEmit",
     "assets:build": "node scripts/build-images.mjs",
+    "assets:closing": "node scripts/build-closing-artwork.mjs",
     "content:check": "node scripts/validate-content.mjs",
     "preview": "node scripts/serve-static.mjs",
     "test": "node --test",
