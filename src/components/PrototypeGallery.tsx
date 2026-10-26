@@ -1,6 +1,7 @@
 import gallery from '@/content/gallery.json';
 import manifest from '@/content/generated-manifest.json';
 import { withBasePath } from '@/lib/site-paths';
+import OneArtwork from '@/components/OneArtwork';
 import styles from './PrototypeGallery.module.css';
 
 const assetFor = (id: string) => manifest.images.find((image) => image.id === id);
@@ -143,19 +144,12 @@ export default function PrototypeGallery() {
       <section className={styles.contact} id="contact" aria-labelledby="contact-title">
         <div className={styles.contactEcho} aria-hidden="true" style={{ backgroundImage: closing?.variants[1] ? `url("${withBasePath(closing.variants[1].path)}")` : undefined }} />
         {closing && closingImage && (
-          <div className={styles.contactArtwork}>
-            {/* eslint-disable-next-line @next/next/no-img-element -- Uses the pre-generated responsive image manifest. */}
-            <img
-              src={withBasePath(closingImage.path)}
-              srcSet={imageSet(closing.variants)}
-              sizes="(max-width: 700px) 38vw, 24vw"
-              width={closingImage.width}
-              height={closingImage.height}
-              alt="A small white line drawing against black"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
+          <OneArtwork
+            src={withBasePath(closingImage.path)}
+            srcSet={imageSet(closing.variants)}
+            width={closingImage.width}
+            height={closingImage.height}
+          />
         )}
         <div className={styles.contactCopy}>
           <p className={styles.kicker}>AFTER THE EXHIBITION</p>

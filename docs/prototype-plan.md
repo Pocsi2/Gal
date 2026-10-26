@@ -8,14 +8,13 @@ Create a bold, image-led gallery review experience for Resilient Explorations th
 
 - New separate static route at /prototype/ using existing content and responsive image manifest.
 - Threshold, four selected image studies, six object studies together, and Telegram close.
-- CSS-only hover/focus enlargement, restrained section reveals, responsive layout, reduced-motion support, visible handle fallback.
+- CSS hover/focus enlargement, restrained section reveals, responsive layout, reduced-motion support, visible handle fallback, and an interactive black/white polarity lens for the closing One image.
 - Design-board with three options and recommendation.
 
 ## Out of scope
 
-- Modifying the current homepage, live GitHub repository, source artworks, contact configuration, or content relationships.
-- Checkout, product facts, prices, artist biography, additional dependencies, GSAP, or WebGL.
-- Pushing or deployment.
+- Modifying the current homepage, source artworks, contact configuration, or content relationships.
+- Checkout, fabricated product facts, additional contact channels, additional dependencies, GSAP, or WebGL.
 
 ## Chosen approach
 
@@ -23,9 +22,9 @@ The quiet sequence: editorial image journey with a composed object study field. 
 
 ## Risks and rollback
 
-Potential issues include CSS support for :has(), image weight, keyboard/hover discoverability, and Telegram deep-link availability. The core layout does not depend on :has(); focus/hover states and visible handle provide fallbacks. All changes are on the award-gallery-prototype branch and confined to the new route/component and docs. Rollback by switching to main or removing the branch.
+Potential issues include CSS mask support, image weight, keyboard/hover discoverability, and Telegram deep-link availability. The base image remains visible without masking; touch/keyboard activation toggles the full inversion. Reduced-motion preference disables pointer tracking while keeping the toggle. Changes are confined to the new route/component and docs; rollback by reverting the prototype commits on main, leaving the original homepage in place.
 
 ## Verification
 
-Run typecheck and production static build, inspect exported route and asset links, review the changed diff. Do not claim visual browser QA unless performed. Tests are not requested.
+Typecheck, production static build, content validation, and static export validation passed before this enhancement. Re-run those checks after edits; verify the exported prototype copy and image URLs. Browser-level screen-reader and device testing remain review items. Automated tests were not requested.
 
