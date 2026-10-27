@@ -56,6 +56,21 @@ export default function GalleryExhibition() {
                   loading="lazy"
                   decoding="async"
                 />
+                {item.asset.id === 'jump' && (
+                  // eslint-disable-next-line @next/next/no-img-element -- Duplicate layer reveals original color through a small centered mask.
+                  <img
+                    className="color-reveal-layer"
+                    src={withBasePath(image.path)}
+                    srcSet={responsiveSet(item.asset.variants)}
+                    sizes="(max-width: 700px) 92vw, 72vw"
+                    width={image.width}
+                    height={image.height}
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                )}
               </div>
               <figcaption><span>IMAGE STUDY</span><span>{String(index + 1).padStart(2, '0')} <i>/</i> 05</span><span className="mobile-filename">{item.asset.sourceFilename}</span></figcaption>
             </figure>

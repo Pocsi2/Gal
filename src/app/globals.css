@@ -41,6 +41,21 @@
 
 @media(max-width:560px){.object-gallery{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:repeat(12,minmax(24px,8vw));gap:1.5vw .9vw;width:100%}.object-work,.object-work:nth-child(n){width:auto;height:auto;grid-column:span 2;grid-row:span 3;align-self:stretch}.object-work--01{grid-column:1/span 2;grid-row:1/span 3}.object-work--02{grid-column:3/span 2;grid-row:1/span 3}.object-work--03{grid-column:5/span 2;grid-row:1/span 3}.object-work--04{grid-column:1/span 2;grid-row:4/span 3}.object-work--05{grid-column:3/span 2;grid-row:4/span 3}.object-work--06{grid-column:5/span 2;grid-row:4/span 3}.object-work--07{grid-column:1/span 2;grid-row:7/span 3}.object-work--08{grid-column:3/span 2;grid-row:7/span 3}.object-work--09{grid-column:5/span 2;grid-row:7/span 3}.object-work--10{grid-column:1/span 2;grid-row:10/span 3}.object-work--11{grid-column:3/span 2;grid-row:10/span 3}.object-work--12{grid-column:5/span 2;grid-row:10/span 3}}
 
+/* File names stay visible as quiet captions; color is revealed only on the first work. */
+.mobile-filename{display:block!important;grid-column:1/-1;grid-row:2;font-size:7px;line-height:1.3;letter-spacing:.12em;text-transform:uppercase;overflow-wrap:anywhere}
+.primary-work figcaption{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;gap:.35rem .75rem}
+.primary-work figcaption .mobile-filename{color:rgba(236,235,231,.58)}
+.object-work figcaption{display:grid;grid-template-columns:1fr;grid-template-rows:auto auto;gap:.25rem}
+.object-work figcaption .mobile-filename{color:rgba(255,255,255,.62);font-size:6px}
+.primary-work-wall .color-reveal-layer{position:absolute;inset:0;width:100%;height:100%;max-width:82%;max-height:62svh;margin:auto;object-fit:contain;filter:none!important;clip-path:ellipse(0% 0% at 50% 50%);transition:clip-path .8s var(--ease);pointer-events:none}
+.primary-work--portrait .primary-work-wall .color-reveal-layer{max-height:67svh;max-width:60%}
+.primary-work--square .primary-work-wall .color-reveal-layer{max-width:68%;max-height:58svh}
+.primary-work--jump .primary-work-wall img:not(.color-reveal-layer),.primary-work--jump:hover .primary-work-wall img:not(.color-reveal-layer),.primary-work--jump:focus-visible .primary-work-wall img:not(.color-reveal-layer),.primary-work--vocal:hover .primary-work-wall img,.primary-work--vocal:focus-visible .primary-work-wall img,.primary-work--image-hand:hover .primary-work-wall img,.primary-work--image-hand:focus-visible .primary-work-wall img,.primary-work--image-eye:hover .primary-work-wall img,.primary-work--image-eye:focus-visible .primary-work-wall img{filter:grayscale(1) drop-shadow(0 24px 48px rgba(0,0,0,.3))!important}
+.primary-work--jump:hover .primary-work-wall .color-reveal-layer,.primary-work--jump:focus-visible .primary-work-wall .color-reveal-layer{clip-path:ellipse(12.5% 12.5% at 50% 50%)}
+.primary-work--support-rocks .primary-work-wall img{filter:invert(1) drop-shadow(0 24px 48px rgba(0,0,0,.3))!important}
+@media(max-width:560px){.primary-work figcaption{grid-template-columns:1fr auto;grid-template-rows:auto auto}.object-work figcaption{grid-template-columns:1fr;grid-template-rows:auto auto}}
+@media(prefers-reduced-motion:reduce){.primary-work-wall .color-reveal-layer{transition:none}}
+
 
 /* Chore opens the exhibition; One returns as its closing image. */
 .opening-image--chore img{object-fit:contain;object-position:center;filter:invert(1) grayscale(1) brightness(.82) contrast(.92)}

@@ -30,8 +30,8 @@ The static export is written to `out/`. `npm run preview` serves it locally at `
 
 ## Image pipeline
 
-- `assets/originals/` contains unchanged copies of the original 28 unique images and the two later additions, `One b.jfif` and `Suport Rocks.jpeg`. The initial 29-file inventory includes one exact duplicate, documented but not repeated in the visual sequence.
-- `exhibitionImageIds` in `src/content/gallery.json` selects the exhibition sequence. The home introduction counts only the five image works. Object studies remain a separate, uncounted section. Archived studies and emergency references remain separate. `chore` opens the exhibition, `Suport Rocks` is the final exhibited image, and `One b` closes the invitation.
+- `assets/originals/` contains unchanged copies of the source images, including `One b.jfif` and the current `tones aligneds.jpeg` filename for the final exhibited work. The initial inventory includes an exact duplicate, documented but not repeated in the visual sequence.
+- `exhibitionImageIds` in `src/content/gallery.json` selects the exhibition sequence. The home introduction counts only the five image works. Object studies remain a separate, uncounted section. Archived studies and emergency references remain separate. `chore` opens the exhibition, `tones aligneds` is the final exhibited image, and `One b` closes the invitation.
 - `assets/image-sources.json` maps the source files to stable IDs, image descriptions, filename-led groups, and presentation roles.
 - Run `npm run assets:build` to generate responsive WebP variants in `public/images/` and update `src/content/generated-manifest.json`.
 - Run `npm run assets:closing` to generate transparent responsive variants of the separate `One b` closing image.
