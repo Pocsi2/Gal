@@ -86,7 +86,7 @@ export default function PrototypeGallery() {
             const image = work.asset.variants.at(-1);
             if (!image) return null;
             return (
-              <figure className={`${styles.work} ${styles[`work${index + 1}`] ?? ''}`} key={work.id} data-reveal>
+              <figure className={`${styles.work} ${styles[`work${index + 1}`] ?? ''}`} key={work.id} data-reveal tabIndex={0}>
                 <div className={styles.workEcho} aria-hidden="true" style={{ backgroundImage: `url("${withBasePath(work.asset.variants[1]?.path ?? image.path)}")` }} />
                 <div className={styles.workImage}>
                   {/* eslint-disable-next-line @next/next/no-img-element -- Uses the pre-generated responsive image manifest. */}
@@ -101,7 +101,7 @@ export default function PrototypeGallery() {
                     decoding="async"
                   />
                 </div>
-                <figcaption><span>IMAGE STUDY</span><span>{String(index + 1).padStart(2, '0')} <i>/</i> 05</span></figcaption>
+                <figcaption><span>IMAGE STUDY</span><span>{String(index + 1).padStart(2, '0')} <i>/</i> 05</span><span className={styles.mobileFilename}>{work.asset.sourceFilename}</span></figcaption>
               </figure>
             );
           })}
@@ -133,7 +133,7 @@ export default function PrototypeGallery() {
                     decoding="async"
                   />
                 </div>
-                <figcaption><span>{String(index + 1).padStart(2, '0')}</span><span>STUDY</span></figcaption>
+                <figcaption><span>{String(index + 1).padStart(2, '0')}</span><span>STUDY</span><span className={styles.mobileFilename}>{object.asset.sourceFilename}</span></figcaption>
               </figure>
             );
           })}

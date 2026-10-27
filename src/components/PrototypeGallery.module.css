@@ -122,3 +122,23 @@
 .contactArtwork *{transition:none!important}.polarityHover .polarityLens{opacity:0!important}.polarityInverted .polarityLens{opacity:1!important}
 }
 
+/* Art begins in monochrome; pointer and keyboard focus return each source to color. */
+.thresholdImage img{transition:filter .8s cubic-bezier(.22,1,.36,1),transform 30s ease-in-out}
+.thresholdImage:hover img,.thresholdImage:focus-within img{filter:none}
+.workImage img{filter:grayscale(1) drop-shadow(0 24px 50px rgba(0,0,0,.42));transition:filter .75s cubic-bezier(.22,1,.36,1),transform 1.1s cubic-bezier(.16,1,.3,1)}
+.work:hover .workImage img,.work:focus-visible .workImage img{filter:grayscale(0) drop-shadow(0 24px 50px rgba(0,0,0,.42))}
+.work5 .workImage img{filter:grayscale(1) contrast(1.22) brightness(.94);mix-blend-mode:multiply}
+.work5:hover .workImage img,.work5:focus-visible .workImage img{filter:grayscale(0) contrast(1) brightness(1);mix-blend-mode:multiply}
+.objectImage img{filter:grayscale(1);transition:filter .75s cubic-bezier(.22,1,.36,1),transform 1.15s cubic-bezier(.22,1,.36,1),opacity .75s ease}
+.objectStudy:hover .objectImage img,.objectStudy:focus-visible .objectImage img{filter:grayscale(0)}
+.mobileFilename{display:none}
+@media(max-width:560px){
+.work,.work2,.work5{display:flex;flex-direction:column;align-items:center;justify-content:center}
+.work figcaption{position:relative;inset:auto;left:auto;right:auto;bottom:auto;display:grid;grid-template-columns:1fr auto;align-self:stretch;gap:.55rem;margin-top:.85rem;padding:0 7vw;font-size:6px}
+.mobileFilename{display:block;grid-column:1/-1;grid-row:2;font-size:6px;letter-spacing:.12em;text-transform:uppercase;overflow-wrap:anywhere}
+.objectStudy{display:flex;flex-direction:column;overflow:hidden;padding-bottom:1.8rem}
+.objectImage{position:absolute;inset:0 0 1.8rem}
+.objectStudy figcaption{left:0;right:0;bottom:0;height:1.8rem;display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;align-content:center;gap:.2rem .5rem;padding:.15rem .45rem;font-size:5px;background:none;letter-spacing:.08em}
+.objectStudy .mobileFilename{grid-column:1/-1;grid-row:2;font-size:5px;line-height:1.1;letter-spacing:.05em}
+}
+

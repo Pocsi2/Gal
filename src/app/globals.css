@@ -14,6 +14,23 @@
 @media(max-width:560px){.exhibition{padding:12vh 6vw 9vh}.exhibition-intro h2{font-size:clamp(4.2rem,19vw,6.2rem);margin:1.7rem 0}.exhibition-intro>p:not(.overline),.objects-intro>p:last-child{font-size:13px}.exhibition-count{font-size:7px}.primary-gallery{margin-bottom:10vh}.primary-work,.primary-work:nth-child(even){grid-template-columns:1fr;grid-template-rows:64svh auto;min-height:72svh;margin-bottom:7vh}.primary-work-wall,.primary-work:nth-child(even) .primary-work-wall{grid-column:1;grid-row:1;height:61svh}.primary-work figcaption,.primary-work:nth-child(even) figcaption{grid-column:1;grid-row:2;padding:.85rem .15rem}.primary-work-wall img{max-width:94%;max-height:55svh}.primary-work--portrait .primary-work-wall img{max-width:82%;max-height:57svh}.primary-work--square .primary-work-wall img{max-width:88%;max-height:53svh}.objects-intro{margin:8vh auto}.objects-intro h3{font-size:clamp(3.8rem,16vw,5.4rem)}.object-gallery{display:flex;flex-direction:column;gap:8vh;width:100%}.object-work{width:84%;height:48svh}.object-work:nth-child(even){align-self:flex-end}.object-work:nth-child(3n){width:72%;align-self:flex-start}.object-work:nth-child(3n + 2){width:78%}.object-work-wall img{max-width:84%;max-height:78%}.object-work figcaption{font-size:6px;padding:.7rem .55rem}.exhibition-endnote{font-size:7px;margin-top:11vh}}
 @media(prefers-reduced-motion:reduce){.primary-work,.object-work{transition:none!important}.wall-echo{filter:none}.motion-ready [data-reveal]{clip-path:none!important;opacity:1!important}}
 
+/* Monochrome hanging; hover or keyboard focus reveals the original image color. */
+.opening-image img{transition:filter .8s var(--ease),transform 30s ease-in-out}
+.opening-image:hover img,.opening-image:focus-within img{filter:none}
+.primary-work-wall img,.object-work-wall img{filter:grayscale(1) drop-shadow(0 20px 38px rgba(0,0,0,.28));transition:filter .75s var(--ease),transform .8s var(--ease)}
+.primary-work:hover .primary-work-wall img,.primary-work:focus-visible .primary-work-wall img,.object-work:hover .object-work-wall img,.object-work:focus-visible .object-work-wall img{filter:grayscale(0) drop-shadow(0 20px 38px rgba(0,0,0,.28))}
+.primary-work--support-rocks .primary-work-wall img{filter:grayscale(1) contrast(1.22) brightness(.94) drop-shadow(0 20px 38px rgba(0,0,0,.28))}
+.primary-work--support-rocks:hover .primary-work-wall img,.primary-work--support-rocks:focus-visible .primary-work-wall img{filter:grayscale(0) contrast(1) brightness(1) drop-shadow(0 20px 38px rgba(0,0,0,.28))}
+.mobile-filename{display:none}
+@media(max-width:560px){
+.mobile-filename{display:block;grid-column:1/-1;grid-row:2;font-size:7px;line-height:1.2;letter-spacing:.12em;text-transform:uppercase;overflow-wrap:anywhere}
+.primary-work figcaption{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;gap:.55rem;padding:1rem .15rem}
+.object-work{height:auto;min-height:0;padding-bottom:2.2rem;overflow:hidden}
+.object-work-wall{position:relative;inset:auto;height:42svh}
+.object-work figcaption{position:absolute;left:0;right:0;bottom:0;height:2.2rem;display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;align-content:center;gap:.2rem .5rem;padding:.2rem .55rem;background:none;font-size:6px;letter-spacing:.08em}
+.object-work .mobile-filename{grid-column:1/-1;grid-row:2;font-size:6px;letter-spacing:.06em}
+}
+
 /* Object match room: an editorial exercise in looking, built on native pointer input. */
 .object-gallery{grid-template-rows:repeat(28,minmax(22px,4.6vw))}
 .object-work--01{grid-column:2/span 4;grid-row:1/span 4}.object-work--02{grid-column:8/span 4;grid-row:3/span 4}.object-work--03{grid-column:1/span 4;grid-row:6/span 4}.object-work--04{grid-column:7/span 5;grid-row:7/span 4}.object-work--05{grid-column:3/span 4;grid-row:11/span 4}.object-work--06{grid-column:9/span 3;grid-row:11/span 4}

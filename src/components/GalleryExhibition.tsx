@@ -37,9 +37,10 @@ export default function GalleryExhibition() {
           const image = item.asset.variants[item.asset.variants.length - 1];
           return (
             <figure
-              className={`primary-work primary-work--${item.asset.orientation}`}
+              className={`primary-work primary-work--${item.asset.orientation} primary-work--${item.asset.id}`}
               key={item.id}
               data-reveal
+              tabIndex={0}
               style={{ '--wall-ground': item.asset.groundColor } as CSSProperties}
             >
               <div className="primary-work-wall">
@@ -56,7 +57,7 @@ export default function GalleryExhibition() {
                   decoding="async"
                 />
               </div>
-              <figcaption><span>IMAGE STUDY</span><span>{String(index + 1).padStart(2, '0')} <i>/</i> 05</span></figcaption>
+              <figcaption><span>IMAGE STUDY</span><span>{String(index + 1).padStart(2, '0')} <i>/</i> 05</span><span className="mobile-filename">{item.asset.sourceFilename}</span></figcaption>
             </figure>
           );
         })}
@@ -91,7 +92,7 @@ export default function GalleryExhibition() {
                   decoding="async"
                 />
               </div>
-              <figcaption><span>{String(index + primaryWorks.length + 1).padStart(2, '0')}</span></figcaption>
+              <figcaption><span>{String(index + primaryWorks.length + 1).padStart(2, '0')}</span><span className="mobile-filename">{item.asset.sourceFilename}</span></figcaption>
             </figure>
           );
         })}
