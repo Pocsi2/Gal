@@ -34,10 +34,10 @@ test('Telegram is the sole contact and no unverified destination is configured',
   assert.deepEqual(contact, { platform: 'Telegram', handle: '@thicklll', destinationVerified: false });
 });
 
-test('all 28 distinct source images have responsive local WebP variants', async () => {
+test('all 29 distinct catalogued source images have responsive local WebP variants', async () => {
   const ids = [gallery.opening.imageId, ...gallery.artworks.map((work) => work.imageId), ...gallery.objects.map((object) => object.imageId)];
-  assert.equal(new Set(ids.slice(1)).size, 28);
-  assert.equal(images.images.length, 28);
+  assert.equal(new Set(ids.slice(1)).size, 29);
+  assert.equal(images.images.length, 29);
   for (const id of ids) {
     const image = byId.get(id);
     assert.ok(image, `missing image manifest entry ${id}`);
