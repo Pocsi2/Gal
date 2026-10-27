@@ -68,7 +68,7 @@ test('the exhibition shows eleven selected images and keeps archived and emergen
   assert.equal(gallery.exhibitionImageIds.some((id) => gallery.archivedStudyImageIds.includes(id)), false);
   assert.match(exhibition, /primary-gallery/);
   assert.match(exhibition, /object-gallery/);
-  assert.match(exhibition, /Six selected object studies/);
+  assert.match(exhibition, /aria-label="Selected object studies"/);
   assert.doesNotMatch(exhibition, /aria-roledescription="carousel"/);
 });
 
