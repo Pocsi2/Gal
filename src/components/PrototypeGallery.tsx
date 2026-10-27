@@ -112,10 +112,10 @@ export default function PrototypeGallery() {
         <header className={styles.objectIntro}>
           <p className={styles.kicker}>AN EXTENSION OF THE IMAGE</p>
           <h2 id="objects-title">Objects<br /><i>in view.</i></h2>
-          <p>Six designs applied, by the same hands</p>
-          <span>OBJECT STUDIES <i>—</i> 06</span>
+          <p>Designs applied, by the same hands</p>
+          <span>OBJECT STUDIES</span>
         </header>
-        <div className={styles.objectField} role="group" aria-label="Six object studies">
+        <div className={styles.objectField} role="group" aria-label="Object studies">
           {objects.map((object, index) => {
             const image = object.asset.variants[Math.min(1, object.asset.variants.length - 1)];
             return (
@@ -133,7 +133,7 @@ export default function PrototypeGallery() {
                     decoding="async"
                   />
                 </div>
-                <figcaption><span>{String(index + 1).padStart(2, '0')}</span><span>STUDY</span><span className={styles.mobileFilename}>{object.asset.sourceFilename}</span></figcaption>
+                <figcaption><span>STUDY</span><span className={styles.mobileFilename}>{object.asset.sourceFilename}</span></figcaption>
               </figure>
             );
           })}
@@ -159,7 +159,7 @@ export default function PrototypeGallery() {
           <p className={styles.contactFallback}>If Telegram does not open, find the artist in Telegram by the handle above.</p>
         </div>
         <footer className={styles.footer}>
-          <a href="#top">RESILIENT EXPLORATIONS</a><span>END OF THIS STAGE’S EXPLORATION</span><a href="#top">BACK TO THE BEGINNING ↑</a>
+          <a href="#top">RESILIENT EXPLORATIONS</a><span>END OF THIS STAGE’S EXPLORATION. CONTINUING EXPLORATION</span><a href="#top">BACK TO THE BEGINNING ↑</a>
         </footer>
       </section>
     </main>

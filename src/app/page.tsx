@@ -5,13 +5,13 @@ import TelegramInvitation from '@/components/TelegramInvitation';
 
 export default function Home() {
   const opening = gallery.opening;
-  const imageCount = gallery.exhibitionImageIds.length;
+  const workCount = gallery.exhibitionImageIds.filter((id) => gallery.artworks.some((work) => work.imageId === id)).length;
 
   return (
     <main id="top">
       <header className="masthead">
         <a className="signature" href="#top" aria-label="Resilient Explorations">RESILIENT EXPLORATIONS</a>
-        <a className="index-link" href="#exhibition">Exhibition <span>{String(imageCount).padStart(2, '0')} WORKS</span></a>
+        <a className="index-link" href="#exhibition">Exhibition <span>{String(workCount).padStart(2, '0')} WORKS</span></a>
       </header>
 
       <section className="opening" aria-labelledby="opening-title">
@@ -28,8 +28,8 @@ export default function Home() {
           <h1 id="opening-title"><span>Resilient</span><span>Explorations</span></h1>
           <p className="intro">A showcase of this stage’s exploration<br className="desktop-break" /> through image, gesture and object.</p>
         </div>
-        <a className="scroll-cue" href="#exhibition"><span>Enter the exhibition · {imageCount} works</span><i aria-hidden="true">↓</i></a>
-        <span className="frame-count" aria-hidden="true">01 — {String(imageCount).padStart(2, '0')}</span>
+        <a className="scroll-cue" href="#exhibition"><span>Enter the exhibition · {workCount} works</span><i aria-hidden="true">↓</i></a>
+        <span className="frame-count" aria-hidden="true">01 — {String(workCount).padStart(2, '0')}</span>
       </section>
 
       <GalleryExhibition />

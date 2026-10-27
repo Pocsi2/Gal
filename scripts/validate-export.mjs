@@ -15,7 +15,7 @@ if (!html.includes('A Life of') || !html.includes('Frames from this stage’s ex
   errors.push('The stage-exploration introduction is missing from the exported page.');
 }
 if (!html.includes('showcase of this stage')) errors.push('Stage-exploration framing is missing from the exported page.');
-if (!html.includes('Six selected object studies')) errors.push('The curated object presentation is missing from the exported page.');
+if (!html.includes('Objects')) errors.push('The curated object presentation is missing from the exported page.');
 if (!html.includes('@thicklll')) errors.push('Telegram handle is missing from the exported page.');
 if (!html.includes('Copy Telegram handle')) errors.push('Telegram contact action is missing from the exported page.');
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';

@@ -29,7 +29,7 @@ export default function GalleryExhibition() {
         <h2 id="exhibition-title">A Life of<br /><em>looking.</em></h2>
         <p>Frames from this stage’s exploration.</p>
         <p>Move through them at your own pace.</p>
-        <span className="exhibition-count">05 IMAGE STUDIES <i>/</i> 06 OBJECT STUDIES</span>
+        <span className="exhibition-count">05 WORKS</span>
       </header>
 
       <div className="primary-gallery" role="group" aria-label="Five image studies">
@@ -66,10 +66,10 @@ export default function GalleryExhibition() {
       <header className="objects-intro">
         <p className="overline">AN EXTENSION OF THE IMAGE</p>
         <h3>Objects<br /><em>in view.</em></h3>
-        <p>Six designs applied, by the same hands</p>
+        <p>Designs applied, by the same hands</p>
       </header>
 
-      <div className="object-gallery" role="group" aria-label="Six selected object studies">
+      <div className="object-gallery" role="group" aria-label="Selected object studies">
         {objectStudies.map((item, index) => {
           const image = item.asset.variants[Math.min(1, item.asset.variants.length - 1)];
           return (
@@ -92,13 +92,13 @@ export default function GalleryExhibition() {
                   decoding="async"
                 />
               </div>
-              <figcaption><span>{String(index + primaryWorks.length + 1).padStart(2, '0')}</span><span className="mobile-filename">{item.asset.sourceFilename}</span></figcaption>
+              <figcaption><span>STUDY</span><span className="mobile-filename">{item.asset.sourceFilename}</span></figcaption>
             </figure>
           );
         })}
       </div>
 
-      <p className="exhibition-endnote">END OF THIS STAGE’S EXPLORATION</p>
+      <p className="exhibition-endnote">END OF THIS STAGE’S EXPLORATION. CONTINUING EXPLORATION</p>
     </section>
   );
 }

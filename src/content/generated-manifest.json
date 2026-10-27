@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T02:12:22.383Z",
+  "generatedAt": "2026-10-27T21:39:21.993Z",
   "format": "webp",
   "quality": 86,
   "images": [
@@ -149,7 +149,7 @@
     },
     {
       "id": "image-hand",
-      "sourceFilename": "image (3).jpg",
+      "sourceFilename": "Trust.jpg",
       "role": "artwork",
       "group": "image",
       "alt": "A black-gloved hand against a dark background",
@@ -182,7 +182,7 @@
     },
     {
       "id": "image-eye",
-      "sourceFilename": "image (4).jpg",
+      "sourceFilename": "Containment.jpg",
       "role": "artwork",
       "group": "image",
       "alt": "Close-up of an eye framed by dark makeup",
