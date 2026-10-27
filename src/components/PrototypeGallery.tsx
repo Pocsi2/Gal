@@ -12,22 +12,18 @@ const closingVariants = [
 ];
 
 const works = gallery.exhibitionImageIds
-  .slice(0, 4)
-  .map((id) => {
+  .flatMap((id) => {
     const record = gallery.artworks.find((artwork) => artwork.imageId === id);
     const asset = assetFor(id);
-    return record && asset ? { ...record, asset } : null;
+    return record && asset ? [{ ...record, asset }] : [];
   })
-  .filter((item): item is NonNullable<typeof item> => item !== null);
 
 const objects = gallery.exhibitionImageIds
-  .slice(4)
-  .map((id) => {
+  .flatMap((id) => {
     const record = gallery.objects.find((object) => object.imageId === id);
     const asset = assetFor(id);
-    return record && asset ? { ...record, asset } : null;
+    return record && asset ? [{ ...record, asset }] : [];
   })
-  .filter((item): item is NonNullable<typeof item> => item !== null);
 
 function imageSet(variants: { path: string; width: number }[]) {
   return variants.map((variant) => `${withBasePath(variant.path)} ${variant.width}w`).join(', ');
@@ -72,7 +68,7 @@ export default function PrototypeGallery() {
           <p>A showcase of this stage’s exploration.</p>
         </div>
         <a className={styles.enter} href="#works"><span>Enter the exhibition</span><span aria-hidden="true">↓</span></a>
-        <span className={styles.thresholdIndex} aria-hidden="true">00 / 04</span>
+        <span className={styles.thresholdIndex} aria-hidden="true">00 / 05</span>
       </section>
 
       <span id="exhibition" className={styles.skipTarget} />
@@ -105,7 +101,7 @@ export default function PrototypeGallery() {
                     decoding="async"
                   />
                 </div>
-                <figcaption><span>IMAGE STUDY</span><span>{String(index + 1).padStart(2, '0')} <i>/</i> 04</span></figcaption>
+                <figcaption><span>IMAGE STUDY</span><span>{String(index + 1).padStart(2, '0')} <i>/</i> 05</span></figcaption>
               </figure>
             );
           })}

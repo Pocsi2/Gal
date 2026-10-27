@@ -13,7 +13,8 @@
     "chore-pin",
     "jump-socks-pair",
     "one-clock-wall",
-    "vocal-socks"
+    "vocal-socks",
+    "support-rocks"
   ],
   "archivedStudyImageIds": [
     "jump-pin",
@@ -99,6 +100,17 @@
       "imageId": "image-eye",
       "label": "IMAGE STUDY",
       "alt": "Close-up of an eye framed by dark makeup",
+      "title": null,
+      "year": null,
+      "medium": null,
+      "description": null
+    },
+    {
+      "id": "work-07",
+      "order": 7,
+      "imageId": "support-rocks",
+      "label": "IMAGE STUDY",
+      "alt": "A vertical stack of carved, porous stone forms",
       "title": null,
       "year": null,
       "medium": null,

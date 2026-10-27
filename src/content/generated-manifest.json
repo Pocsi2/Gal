@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T05:46:12.393Z",
+  "generatedAt": "2026-10-27T02:12:22.383Z",
   "format": "webp",
   "quality": 86,
   "images": [
@@ -210,6 +210,39 @@
           "height": 1168,
           "path": "/images/image-eye-784.webp",
           "bytes": 135644
+        }
+      ]
+    },
+    {
+      "id": "support-rocks",
+      "sourceFilename": "Suport Rocks.jpeg",
+      "role": "artwork",
+      "group": "support-rocks",
+      "alt": "A vertical stack of carved, porous stone forms",
+      "sourceHash": "82b13faec195c28303dba563f33d0e8b156fbb8d41189562bc0a3df741718a0b",
+      "sourceFormat": "jpeg",
+      "sourceWidth": 1080,
+      "sourceHeight": 1601,
+      "orientation": "portrait",
+      "groundColor": "#444444",
+      "variants": [
+        {
+          "width": 480,
+          "height": 712,
+          "path": "/images/support-rocks-480.webp",
+          "bytes": 21816
+        },
+        {
+          "width": 768,
+          "height": 1138,
+          "path": "/images/support-rocks-768.webp",
+          "bytes": 41720
+        },
+        {
+          "width": 1080,
+          "height": 1601,
+          "path": "/images/support-rocks-1080.webp",
+          "bytes": 61424
         }
       ]
     },

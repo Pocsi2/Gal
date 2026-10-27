@@ -1,6 +1,6 @@
 {
-  "source_folder_note": "Originals inspected read-only; paths omitted from public manifest.",
-  "asset_count": 29,
+  "source_folder_note": "Originals inspected read-only; local paths omitted from public manifest.",
+  "asset_count": 31,
   "assets": [
     {
       "filename": "chore cojin (1).jpg",
@@ -258,6 +258,21 @@
       "metadata_status": "title/year/medium/description require artist confirmation"
     },
     {
+      "filename": "One b.jfif",
+      "dimensions_px": "932x1599",
+      "width": "932",
+      "height": "1599",
+      "aspect_ratio": "0.5829",
+      "format": "JPEG",
+      "extension": ".jfif",
+      "size_bytes": "55353",
+      "orientation": "portrait",
+      "provisional_filename_group": "one",
+      "sha256_file": "d2396df6cbbd034e023b7e527aab2203b55c12388010dfe5bc5a1fca31b762ea",
+      "sha256_decoded_pixels": "59622385a1172ac7993860d4d21c8238313ea51bddf4f18739265141ff73eea9",
+      "metadata_status": "title/year/medium/description require artist confirmation"
+    },
+    {
       "filename": "one clock (1).jpg",
       "dimensions_px": "1000x1000",
       "width": "1000",
@@ -345,6 +360,21 @@
       "provisional_filename_group": "one",
       "sha256_file": "48088983e25e53200822e58b1f308190d343e343a44a03678207014204491420",
       "sha256_decoded_pixels": "241eefad510082b0f0a69658f652380a5a9df81a28bacef9999f15c83fc080f2",
+      "metadata_status": "title/year/medium/description require artist confirmation"
+    },
+    {
+      "filename": "Suport Rocks.jpeg",
+      "dimensions_px": "1080x1601",
+      "width": "1080",
+      "height": "1601",
+      "aspect_ratio": "0.6746",
+      "format": "JPEG",
+      "extension": ".jpeg",
+      "size_bytes": "59151",
+      "orientation": "portrait",
+      "provisional_filename_group": "suport",
+      "sha256_file": "82b13faec195c28303dba563f33d0e8b156fbb8d41189562bc0a3df741718a0b",
+      "sha256_decoded_pixels": "9ed5618b21461abef4e9d0db19e3bfd2c8c8137e8f8c28b1b0ee9093d3eff9eb",
       "metadata_status": "title/year/medium/description require artist confirmation"
     },
     {

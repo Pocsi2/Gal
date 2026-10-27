@@ -26,7 +26,7 @@ Present the supplied works as a record of this year's exploration. The interface
 
 - **Home:** A single image and title form a threshold; “A Life of looking” frames the current stage.
 - **Navigation:** Discreet wordmark, Works / Objects / Contact anchors, and a small progress index.
-- **Artwork:** Four large, individually composed frames unfold as one sequence; varied scale and negative space make the images feel curated rather than tiled.
+- **Artwork:** Five large, individually composed frames unfold as one sequence; varied scale and negative space make the images feel curated rather than tiled. Suport Rocks is the final hanging, set on a pale field.
 - **Transitions:** Native scroll and short CSS crossfades; foreground art stays crisp while a same-image echo creates depth.
 - **Typography:** One neutral sans family, thin display weight, compact uppercase wayfinding.
 - **Objects:** All six works appear together as a loose “study table”; focus expands one image while the rest soften. The lower-corner sock pair is held smaller within its frame so both socks remain visible. No unverified object-to-artwork pairing is implied.
@@ -58,7 +58,7 @@ Build **The quiet sequence** as a review prototype. Borrow the depth and single-
 
 Use existing image IDs, alt text, and the framing “A showcase of this stage’s exploration.” Factual title, year, medium, biography, object details, price, edition, availability, and shipping remain absent unless present and verified. The only contact is Telegram @thicklll.
 
-The opening image is chore and the closing image is one, preserving the requested visual bookend. The exhibition uses four selected image studies and six distinct object studies; archived repeats and emergency references remain outside the public route. The image IDs come from the existing gallery content model. The object-section endline reads “A On Objects Impressions.” The closing image shifts between dark linework on a pale field and white linework on black.
+The opening image is chore and the closing image is One b, preserving the requested visual bookend. The exhibition uses five selected image studies and six distinct object studies; Suport Rocks is the final image study, while archived repeats and emergency references remain outside the public route. The image IDs come from the gallery content model. The object-section endline reads “A On Objects Impressions.” The closing image shifts between dark linework on a pale field and white linework on black.
 
 ## Design system and motion
 
@@ -103,6 +103,6 @@ The prototype's performance budget targets are LCP ≤2.5s, CLS ≤0.1, and INP 
 ## Review questions
 
 1. Does the sequence feel like entering a digital exhibition rather than browsing a store?
-2. Do the four works have enough negative space and variation to hold attention?
+2. Do the five works have enough negative space and variation to hold attention?
 3. Does the object study composition invite exploration without implying unverified pairings?
 4. Does the chore-to-one visual bookend give the visit a satisfying close?

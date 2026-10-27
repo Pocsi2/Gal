@@ -18,7 +18,7 @@ const assignedIds = [...exhibitionIds, ...emergencyIds, ...archivedStudyIds];
 if (new Set(assignedIds).size !== manifest.images.length || assignedIds.some((id) => !catalogIds.has(id))) {
   errors.push('Every source image must be assigned once to the exhibition, archived studies, or emergency references.');
 }
-if (exhibitionIds.length !== 10) errors.push('The public exhibition must contain 10 selected images.');
+if (exhibitionIds.length !== 11) errors.push('The public exhibition must contain 11 selected images.');
 if (emergencyIds.length !== 12) errors.push('The emergency reference list must contain 12 images.');
 if (archivedStudyIds.length !== 6) errors.push('Six repetitive object studies must stay archived from the public exhibition.');
 const objectDisplayIds = exhibitionIds.filter((id) => gallery.objects.some((object) => object.imageId === id));
@@ -46,7 +46,7 @@ for (const imageId of referencedIds) {
   }
 }
 if (contacts.platform !== 'Telegram' || contacts.handle !== '@thicklll') errors.push('The only configured contact must be Telegram @thicklll.');
-if (gallery.artworks.length !== 6) errors.push('Expected six catalogued image studies from the supplied collection.');
+if (gallery.artworks.length !== 7) errors.push('Expected seven catalogued image studies from the supplied collection.');
 if (gallery.objects.length !== 22) errors.push('Expected all 22 catalogued object studies from the supplied collection.');
 if (gallery.objects.some((object) => object.availability !== null || object.price !== null)) errors.push('Availability and price must stay unconfirmed.');
 if (errors.length) {

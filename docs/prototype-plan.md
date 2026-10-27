@@ -7,7 +7,7 @@ Create a bold, image-led gallery review experience for Resilient Explorations th
 ## Scope
 
 - New separate static route at /prototype/ using existing content and responsive image manifest.
-- Threshold, four selected image studies, six object studies together, and Telegram close.
+- Threshold, five selected image studies, six object studies together, and Telegram close.
 - CSS hover/focus enlargement, restrained section reveals, responsive layout, reduced-motion support, visible handle fallback, and an interactive black/white polarity lens for the closing One image.
 - Design-board with three options and recommendation.
 

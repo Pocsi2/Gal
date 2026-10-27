@@ -29,10 +29,10 @@ export default function GalleryExhibition() {
         <h2 id="exhibition-title">A Life of<br /><em>looking.</em></h2>
         <p>Frames from this stage’s exploration.</p>
         <p>Move through them at your own pace.</p>
-        <span className="exhibition-count">04 IMAGE STUDIES <i>/</i> 06 OBJECT STUDIES</span>
+        <span className="exhibition-count">05 IMAGE STUDIES <i>/</i> 06 OBJECT STUDIES</span>
       </header>
 
-      <div className="primary-gallery" role="group" aria-label="Four image studies">
+      <div className="primary-gallery" role="group" aria-label="Five image studies">
         {primaryWorks.map((item, index) => {
           const image = item.asset.variants[item.asset.variants.length - 1];
           return (
@@ -56,7 +56,7 @@ export default function GalleryExhibition() {
                   decoding="async"
                 />
               </div>
-              <figcaption><span>IMAGE STUDY</span><span>{String(index + 1).padStart(2, '0')} <i>/</i> 04</span></figcaption>
+              <figcaption><span>IMAGE STUDY</span><span>{String(index + 1).padStart(2, '0')} <i>/</i> 05</span></figcaption>
             </figure>
           );
         })}

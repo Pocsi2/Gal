@@ -1,6 +1,6 @@
 # Resilient Explorations
 
-A quiet digital exhibition: a showcase of this stage’s exploration through image, gesture, and object. The opening uses the `chore` drawing; the closing invitation uses `one`. The vertical gallery presents four image studies and six selected object views. Six repetitive object views are archived outside the public sequence, and the emergency references stay out of view. Object interpretations remain studies with no cart, checkout, price, stock, or availability claim. Telegram `@thicklll` is the sole contact.
+A quiet digital exhibition: a showcase of this stage’s exploration through image, gesture, and object. The opening uses the `chore` drawing; the closing invitation uses `One b`. The vertical gallery presents five image studies and six selected object views. Six repetitive object views are archived outside the public sequence, and the emergency references stay out of view. Object interpretations remain studies with no cart, checkout, price, stock, or availability claim. Telegram `@thicklll` is the sole contact.
 
 Live site: <https://pocsi2.github.io/Gal/>.
 
@@ -30,8 +30,8 @@ The static export is written to `out/`. `npm run preview` serves it locally at `
 
 ## Image pipeline
 
-- `assets/originals/` contains unchanged copies of 28 unique images from the supplied folder, plus the separate `One b.jfif` alternate used at the close. The original 29-file inventory includes one exact duplicate, documented but not repeated in the visual sequence.
-- `exhibitionImageIds` in `src/content/gallery.json` selects the ten public works. Six repetitive object views are listed under `archivedStudyImageIds`; the twelve emergency references remain separate. `chore` opens the exhibition and `One b` closes the invitation. The original `one` artwork remains in its existing references.
+- `assets/originals/` contains unchanged copies of the original 28 unique images and the two later additions, `One b.jfif` and `Suport Rocks.jpeg`. The initial 29-file inventory includes one exact duplicate, documented but not repeated in the visual sequence.
+- `exhibitionImageIds` in `src/content/gallery.json` selects eleven public works: five image studies and six selected object views. Six repetitive object views are listed under `archivedStudyImageIds`; the twelve emergency references remain separate. `chore` opens the exhibition, `Suport Rocks` is the final exhibited image, and `One b` closes the invitation.
 - `assets/image-sources.json` maps the source files to stable IDs, image descriptions, filename-led groups, and presentation roles.
 - Run `npm run assets:build` to generate responsive WebP variants in `public/images/` and update `src/content/generated-manifest.json`.
 - Run `npm run assets:closing` to generate transparent responsive variants of the separate `One b` closing image.
@@ -41,7 +41,7 @@ The static export is written to `out/`. `npm run preview` serves it locally at `
 
 ## Content editing
 
-Unconfirmed artwork facts remain `null` in `src/content/gallery.json`. The six catalogued image studies have no invented titles, years, or media. The 22 object studies have no asserted artwork association, specifications, price, or availability. The 12 emergency references remain in the source archive and are not rendered in the exhibition. `src/config/contact.json` is the only contact configuration; it contains Telegram `@thicklll` only. The visible handle is copyable. The destination is not linked until verified.
+Unconfirmed artwork facts remain `null` in `src/content/gallery.json`. The seven catalogued image studies have no invented titles, years, or media. The 22 object studies have no asserted artwork association, specifications, price, or availability. The 12 emergency references remain in the source archive and are not rendered in the exhibition. `src/config/contact.json` is the only contact configuration; it contains Telegram `@thicklll` only. The visible handle is copyable. The destination is not linked until verified.
 
 ## GitHub Pages
 
@@ -51,7 +51,7 @@ The workflow computes the correct repository path for both project pages and `us
 
 ## Design and motion
 
-The exhibition follows `docs/design-board.md`. It is a native vertical gallery with four large image hangings and six selected object studies in one asymmetric composition. Repetitive angles and close-up variants are archived outside the public sequence. There is no carousel or autoplay. Reduced-motion visitors receive a static, complete presentation. Scroll remains native, with no WebGL, scroll hijacking, hover-only action, cart, or checkout.
+The exhibition follows `docs/design-board.md`. It is a native vertical gallery with five large image hangings and six selected object studies in one asymmetric composition. Repetitive angles and close-up variants are archived outside the public sequence. There is no carousel or autoplay. Reduced-motion visitors receive a static, complete presentation. Scroll remains native, with no WebGL, scroll hijacking, hover-only action, cart, or checkout.
 
 ## Project structure
 
@@ -74,7 +74,7 @@ tests/                    Node built-in content and interaction checks
 - Mobile lead image: target at or below 500 KB; desktop lead image: target at or below 1.2 MB.
 - Keep initial route JavaScript at or below 150 KB compressed where practical.
 - Track LCP at or below 2.5 s, CLS at or below 0.1, and INP at or below 200 ms on a representative mobile profile before public release.
-- The 73 responsive WebP variants total about 2.57 MB; the browser selects only the active full-size image and suitable thumbnail candidates.
+- The 76 responsive WebP variants total about 2.69 MB; the browser selects only the active full-size image and suitable thumbnail candidates.
 
 ## Before public release
 
