@@ -9,9 +9,9 @@ const contact = JSON.parse(await readFile(path.join(root, 'src/config/contact.js
 const images = JSON.parse(await readFile(path.join(root, 'src/content/generated-manifest.json'), 'utf8'));
 const byId = new Map(images.images.map((image) => [image.id, image]));
 
-test('the exhibition presents six primary image studies without inventing metadata', () => {
-  assert.equal(gallery.artworks.length, 6);
-  assert.deepEqual(gallery.artworks.map((work) => work.order), [1, 2, 3, 4, 5, 6]);
+test('the exhibition catalog presents seven image studies without inventing metadata', () => {
+  assert.equal(gallery.artworks.length, 7);
+  assert.deepEqual(gallery.artworks.map((work) => work.order), [1, 2, 3, 4, 5, 6, 7]);
   for (const work of gallery.artworks) {
     assert.ok(work.alt.trim());
     assert.equal(work.title, null);
@@ -59,9 +59,9 @@ test('the responsive and reduced-motion compositions are present', async () => {
   assert.match(imageComponent, /sizes=/);
 });
 
-test('the exhibition shows ten selected images and keeps archived and emergency references out of view', async () => {
+test('the exhibition shows eleven selected images and keeps archived and emergency references out of view', async () => {
   const exhibition = await readFile(path.join(root, 'src/components/GalleryExhibition.tsx'), 'utf8');
-  assert.equal(gallery.exhibitionImageIds.length, 10);
+  assert.equal(gallery.exhibitionImageIds.length, 11);
   assert.equal(gallery.archivedStudyImageIds.length, 6);
   assert.equal(gallery.emergencyReferenceImageIds.length, 12);
   assert.equal(gallery.exhibitionImageIds.some((id) => gallery.emergencyReferenceImageIds.includes(id)), false);
